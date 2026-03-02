@@ -1,0 +1,88 @@
+/* ================= ROOT FIX ================= */
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Logo hover effects (unchanged) */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Banner scrolling */
+@keyframes scrollBanner {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation: scrollBanner 25s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+/* ================= HERO BACKGROUND SLIDER ================= */
+
+.hero-bg-slider {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: heroFade 18s infinite;
+}
+
+/* ✅ CORRECT IMAGE PATHS (PUBLIC FOLDER) */
+.hero-bg.bg1 {
+  background-image: url('/public/images/bg.jpg');
+  animation-delay: 0s;
+}
+
+.hero-bg.bg2 {
+  background-image: url('/images/bg2.jpg');
+  animation-delay: 6s;
+}
+
+.hero-bg.bg3 {
+  background-image: url('/images/bg3.jpg');
+  animation-delay: 12s;
+}
+
+/* Smooth fade */
+@keyframes heroFade {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* ================= OVERLAY ================= */
+
+.gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.75)
+  );
+  z-index: 1;
+}

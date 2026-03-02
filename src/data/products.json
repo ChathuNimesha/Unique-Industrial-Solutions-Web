@@ -1,0 +1,99 @@
+{
+  "categories": [
+    { "id": "head_eye", "name": "Head & Eye Protection", "icon": "helmet" },
+    { "id": "hearing", "name": "Hearing Protection", "icon": "ear" },
+    { "id": "respiratory", "name": "Respiratory Protection", "icon": "mask" },
+    { "id": "hand", "name": "Hand Protection", "icon": "hand" },
+    { "id": "body", "name": "Body Protection", "icon": "vest" },
+    { "id": "fall", "name": "Fall Protection", "icon": "anchor" },
+    { "id": "fire", "name": "Fire Protection", "icon": "fire" },
+    { "id": "foot", "name": "Foot Protection", "icon": "boot" },
+    { "id": "emergency", "name": "Emergency Preparedness Equipment", "icon": "alert" },
+    { "id": "other", "name": "Other Protection", "icon": "box" }
+  ],
+
+  "products": [
+
+    
+    { "id": "r001", "name": "3M 6800 Full Face Respirator", "category": "respiratory", "uom": "Each" },
+    { "id": "r002", "name": "3M 6200 Half Face Respirator", "category": "respiratory", "uom": "Each" },
+    { "id": "r003", "name": "3M 6001 Organic Vapour Cartridge", "category": "respiratory", "uom": "Pair" },
+    { "id": "r004", "name": "3M 6003 Organic Vapour Acid Gas Cartridge", "category": "respiratory", "uom": "Pair" },
+    { "id": "r005", "name": "3M 6006 Multi Gas Vapour Cartridge", "category": "respiratory", "uom": "Pair" },
+    { "id": "r006", "name": "3M 5N11 N95 Filter", "category": "respiratory", "uom": "Pair" },
+    { "id": "r007", "name": "3M 501 Filter Retainer", "category": "respiratory", "uom": "Pair" },
+    { "id": "r008", "name": "3M 3700 Filter Holder", "category": "respiratory", "uom": "Each" },
+    { "id": "r009", "name": "3M 3744 R95 Filter", "category": "respiratory", "uom": "Each" },
+    { "id": "r010", "name": "3M 8247 R95 Respirator", "category": "respiratory", "uom": "Each" },
+    { "id": "r011", "name": "3M 1860 N95 Respirator", "category": "respiratory", "uom": "Each" },
+    { "id": "r012", "name": "KN95 Mask White", "category": "respiratory", "uom": "Each" },
+    { "id": "r013", "name": "KN95 Mask Black", "category": "respiratory", "uom": "Each" },
+    { "id": "r014", "name": "KN95 Mask Black Long Loop", "category": "respiratory", "uom": "Each" },
+    { "id": "r015", "name": "Dust Mask Triangle Type", "category": "respiratory", "uom": "Each" },
+    { "id": "r016", "name": "Livinguard Mask", "category": "respiratory", "uom": "Each" },
+    { "id": "r017", "name": "Super Breath Mask", "category": "respiratory", "uom": "Each" },
+    { "id": "r018", "name": "Leather Mask", "category": "respiratory", "uom": "Each" },
+    { "id": "r019", "name": "Chemical Mask", "category": "respiratory", "uom": "Each" },
+
+   
+    { "id": "e001", "name": "UDYOGI UD71 Safety Spectacles Clear", "category": "head_eye", "uom": "Each" },
+    { "id": "e002", "name": "UDYOGI UD71 Safety Spectacles Dark", "category": "head_eye", "uom": "Each" },
+    { "id": "e003", "name": "UDYOGI UD49 Safety Goggle", "category": "head_eye", "uom": "Each" },
+    { "id": "e004", "name": "UDYOGI UD46 Safety Goggle", "category": "head_eye", "uom": "Each" },
+    { "id": "e005", "name": "VAULTEX UV AS Spectacles", "category": "head_eye", "uom": "Each" },
+    { "id": "e006", "name": "VAULTEX Over Spectacles", "category": "head_eye", "uom": "Each" },
+    { "id": "e007", "name": "Heavy Dust Goggle", "category": "head_eye", "uom": "Each" },
+    { "id": "e008", "name": "Full Face Visor", "category": "head_eye", "uom": "Each" },
+    { "id": "e009", "name": "Helmet Attachment Clear Visor", "category": "head_eye", "uom": "Each" },
+
+   
+    { "id": "h001", "name": "Ear Muff", "category": "hearing", "uom": "Each" },
+    { "id": "h002", "name": "Corded Ear Plug with Case", "category": "hearing", "uom": "Each" },
+    { "id": "h003", "name": "Disposable Ear Plug", "category": "hearing", "uom": "Each" },
+
+    { "id": "g001", "name": "Electrical Glove Class 00", "category": "hand", "uom": "Pair" },
+    { "id": "g002", "name": "Electrical Glove Class 0", "category": "hand", "uom": "Pair" },
+    { "id": "g003", "name": "Electrical Glove Class 1", "category": "hand", "uom": "Pair" },
+    { "id": "g004", "name": "Chemical Nitrile Glove Elbow Length", "category": "hand", "uom": "Pair" },
+    { "id": "g005", "name": "Leather Welding Glove", "category": "hand", "uom": "Pair" },
+    { "id": "g006", "name": "Cut Resistant Glove Level 5", "category": "hand", "uom": "Pair" },
+    { "id": "g007", "name": "Rubber Coated Glove", "category": "hand", "uom": "Pair" },
+    { "id": "g008", "name": "Disposable Nitrile Glove", "category": "hand", "uom": "Box" },
+
+   
+    { "id": "b001", "name": "Disposable Coverall", "category": "body", "uom": "Each" },
+    { "id": "b002", "name": "Lab Coat", "category": "body", "uom": "Each" },
+    { "id": "b003", "name": "Reflective Jacket", "category": "body", "uom": "Each" },
+    { "id": "b004", "name": "Leather Apron", "category": "body", "uom": "Each" },
+    { "id": "b005", "name": "Rain Suit", "category": "body", "uom": "Each" },
+
+   
+    { "id": "f001", "name": "Full Body Harness with Shock Absorber", "category": "fall", "uom": "Each" },
+    { "id": "f002", "name": "Single Rope Lanyard", "category": "fall", "uom": "Each" },
+    { "id": "f003", "name": "Self Retracting Lifeline 6M", "category": "fall", "uom": "Each" },
+
+    
+    { "id": "fi001", "name": "Fire Blanket 6x6", "category": "fire", "uom": "Each" },
+    { "id": "fi002", "name": "CO2 Fire Extinguisher 2KG", "category": "fire", "uom": "Each" },
+    { "id": "fi003", "name": "Dry Powder Fire Extinguisher", "category": "fire", "uom": "Each" },
+    { "id": "fi004", "name": "Fire Fighting Suit", "category": "fire", "uom": "Set" },
+
+    
+    { "id": "ft001", "name": "Safety Shoe High Ankle", "category": "foot", "uom": "Pair" },
+    { "id": "ft002", "name": "Safety Shoe Low Cut", "category": "foot", "uom": "Pair" },
+    { "id": "ft003", "name": "Gum Boot", "category": "foot", "uom": "Pair" },
+    { "id": "ft004", "name": "Disposable Shoe Cover", "category": "foot", "uom": "Pack" },
+
+    
+    { "id": "em001", "name": "Eye Wash Bottle 500ml", "category": "emergency", "uom": "Each" },
+    { "id": "em002", "name": "Portable Eye Wash Station", "category": "emergency", "uom": "Each" },
+    { "id": "em003", "name": "First Aid Box", "category": "emergency", "uom": "Each" },
+    { "id": "em004", "name": "Fire Extinguisher Ball", "category": "emergency", "uom": "Each" },
+
+   
+    { "id": "o001", "name": "Convex Mirror 60cm", "category": "other", "uom": "Each" },
+    { "id": "o002", "name": "Traffic Cone 75cm", "category": "other", "uom": "Each" },
+    { "id": "o003", "name": "Floor Marking Tape 25M", "category": "other", "uom": "Roll" },
+    { "id": "o004", "name": "Wheel Chock", "category": "other", "uom": "Each" }
+  ]
+}
