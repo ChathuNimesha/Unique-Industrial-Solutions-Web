@@ -2,7 +2,7 @@ import { FaArrowRight, FaShieldAlt, FaWater, FaLeaf } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import CountUp from './CountUp';
 import { motion } from 'framer-motion';
-
+import img1  from "../assets/bg.jpg";
 const Hero = () => {
     return (
         <section
@@ -12,7 +12,7 @@ const Hero = () => {
             {/* ================= BACKGROUND ================= */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="/src/assets/bg.jpg"
+                    src={img1}
                     alt="Industrial facility"
                     className="w-full h-full object-cover"
                 />
