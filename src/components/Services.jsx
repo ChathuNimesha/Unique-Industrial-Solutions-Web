@@ -12,84 +12,98 @@ import {
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
+// ================= IMAGE IMPORTS =================
+import protectiveGear from "../assets/Protective-Gear.png";
+import industrialEnvironmental from "../assets/Industrial Environmental.jpg";
+import wastewaterTreatment from "../assets/WastewaterTreatment.jpg";
+import industrialEngineering from "../assets/Industrial Engineering Projects.jpg";
+import roofLifelines from "../assets/Roof Lifelines.jpg";
+import gasAnalyzers from "../assets/Gas Analyzers.jpg";
+import industrialChemicals from "../assets/Industrial Chemicals.jpg";
+import walkthroughSurveys from "../assets/Walkthrough Surveys.jpg";
+import safetyTrainings from "../assets/Industrial Safety Trainings.jpg";
+import fireProtection from "../assets/Fire Protection & Detection.jpg";
+import supplyMachines from "../assets/Supply Machines & Machinery Parts.jpg";
+
 const Services = () => {
+
     const services = [
         {
             icon: FaHardHat,
             title: "Personal Protective Equipment",
             description:
                 "High-quality PPE including helmets, gloves, masks, safety shoes, coveralls, and more—ensuring maximum protection for industrial workers.",
-            image: "/src/assets/Protective-Gear.png",
+            image: protectiveGear,
         },
         {
             icon: FaLeaf,
             title: "Industrial Environmental Solutions",
             description:
-                "End-to-end environmental protection services including pollution control, waste management, and compliance with regulatory standards.",
-            image: "/src/assets/Industrial Environmental.jpg",
+                "End-to-end environmental protection services including pollution control, waste management, and regulatory compliance.",
+            image: industrialEnvironmental,
         },
         {
             icon: FaWater,
             title: "Water & Wastewater Treatment Plant",
             description:
                 "Design, installation, and maintenance of water and wastewater treatment systems for industrial and commercial operations.",
-            image: "/src/assets/WastewaterTreatment.jpg",
+            image: wastewaterTreatment,
         },
         {
             icon: FaCogs,
             title: "Industrial Engineering Projects",
             description:
                 "Turnkey industrial engineering solutions covering system design, installation, testing, and commissioning.",
-            image: "/src/assets/Industrial Engineering Projects.jpg",
+            image: industrialEngineering,
         },
         {
             icon: FaTools,
             title: "Roof Lifelines",
             description:
                 "Certified roof lifeline systems for fall protection, ensuring worker safety during high-risk operations.",
-            image: "/src/assets/Roof Lifelines.jpg",
+            image: roofLifelines,
         },
         {
             icon: FaSearch,
             title: "Gas Analyzers",
             description:
                 "Reliable gas detection and analysis equipment for monitoring industrial gases and ensuring a safe working environment.",
-            image: "/src/assets/Gas Analyzers.jpg",
+            image: gasAnalyzers,
         },
         {
             icon: FaFlask,
             title: "Industrial Chemicals",
             description:
-                "Specialized chemicals for water treatment, cleaning, and industrial processes, supplied with quality assurance.",
-            image: "/src/assets/Industrial Chemicals.jpg",
+                "Specialized chemicals for water treatment, cleaning, and industrial processes supplied with quality assurance.",
+            image: industrialChemicals,
         },
         {
             icon: FaIndustry,
             title: "Walkthrough Surveys",
             description:
                 "Comprehensive onsite surveys to identify hazards, evaluate risk, and recommend corrective safety actions.",
-            image: "/src/assets/Walkthrough Surveys.jpg",
+            image: walkthroughSurveys,
         },
         {
             icon: FaChalkboardTeacher,
             title: "Industrial Safety Trainings",
             description:
-                "Professional safety training programs for workplaces including fire safety, PPE usage, and emergency response.",
-            image: "/src/assets/Industrial Safety Trainings.jpg",
+                "Professional workplace safety training programs including fire safety, PPE usage, and emergency response.",
+            image: safetyTrainings,
         },
         {
             icon: FaFireExtinguisher,
             title: "Fire Protection & Detection",
             description:
                 "Fire detection systems, extinguishers, alarms, and preventive solutions to safeguard industrial facilities.",
-            image: "/src/assets/Fire Protection & Detection.jpg",
+            image: fireProtection,
         },
         {
             icon: FaTools,
             title: "Supply Machines & Machinery Parts",
             description:
                 "Industrial machines, tools, and genuine spare parts sourced from trusted global manufacturers.",
-            image: "/src/assets/Supply Machines & Machinery Parts.jpg",
+            image: supplyMachines,
         },
     ];
 
@@ -102,9 +116,14 @@ const Services = () => {
                     <span className="inline-block px-4 py-2 bg-primary-100 text-primary-700 rounded-full font-semibold text-sm mb-4">
                         OUR SERVICES
                     </span>
-                    <h2 className="section-heading">Industrial Solutions We Provide</h2>
+
+                    <h2 className="section-heading">
+                        Industrial Solutions We Provide
+                    </h2>
+
                     <p className="section-subheading mx-auto mt-4 max-w-2xl">
-                        Your trusted partner for industrial safety, engineering, environmental, and technical service solutions across Sri Lanka.
+                        Your trusted partner for industrial safety, engineering,
+                        environmental, and technical service solutions across Sri Lanka.
                     </p>
                 </div>
 
@@ -136,7 +155,6 @@ const Services = () => {
                                     {service.description}
                                 </p>
 
-                                {/* FIXED LEARN MORE BUTTON */}
                                 <Link
                                     to="/contact"
                                     className="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition-colors"
@@ -166,10 +184,15 @@ const Services = () => {
                     <p className="text-lg text-industrial-600 mb-6">
                         Need something custom? We offer tailored industrial solutions.
                     </p>
-                    <Link to="/contact" className="btn-primary inline-flex items-center">
+
+                    <Link
+                        to="/contact"
+                        className="btn-primary inline-flex items-center"
+                    >
                         Request a Consultation
                     </Link>
                 </div>
+
             </div>
         </section>
     );
