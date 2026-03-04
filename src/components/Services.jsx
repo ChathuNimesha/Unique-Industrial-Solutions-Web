@@ -29,6 +29,7 @@ const Services = () => {
 
     const services = [
         {
+            id: "ppe",
             icon: FaHardHat,
             title: "Personal Protective Equipment",
             description:
@@ -36,6 +37,7 @@ const Services = () => {
             image: protectiveGear,
         },
         {
+            id: "environmental",
             icon: FaLeaf,
             title: "Industrial Environmental Solutions",
             description:
@@ -43,6 +45,7 @@ const Services = () => {
             image: industrialEnvironmental,
         },
         {
+            id: "wastewater",
             icon: FaWater,
             title: "Water & Wastewater Treatment Plant",
             description:
@@ -50,6 +53,7 @@ const Services = () => {
             image: wastewaterTreatment,
         },
         {
+            id: "engineering",
             icon: FaCogs,
             title: "Industrial Engineering Projects",
             description:
@@ -57,6 +61,7 @@ const Services = () => {
             image: industrialEngineering,
         },
         {
+            id: "roof-lifelines",
             icon: FaTools,
             title: "Roof Lifelines",
             description:
@@ -64,6 +69,7 @@ const Services = () => {
             image: roofLifelines,
         },
         {
+            id: "gas-analyzers",
             icon: FaSearch,
             title: "Gas Analyzers",
             description:
@@ -71,6 +77,7 @@ const Services = () => {
             image: gasAnalyzers,
         },
         {
+            id: "chemicals",
             icon: FaFlask,
             title: "Industrial Chemicals",
             description:
@@ -78,6 +85,7 @@ const Services = () => {
             image: industrialChemicals,
         },
         {
+            id: "surveys",
             icon: FaIndustry,
             title: "Walkthrough Surveys",
             description:
@@ -85,6 +93,7 @@ const Services = () => {
             image: walkthroughSurveys,
         },
         {
+            id: "trainings",
             icon: FaChalkboardTeacher,
             title: "Industrial Safety Trainings",
             description:
@@ -92,6 +101,7 @@ const Services = () => {
             image: safetyTrainings,
         },
         {
+            id: "fire-protection",
             icon: FaFireExtinguisher,
             title: "Fire Protection & Detection",
             description:
@@ -99,6 +109,7 @@ const Services = () => {
             image: fireProtection,
         },
         {
+            id: "machinery",
             icon: FaTools,
             title: "Supply Machines & Machinery Parts",
             description:
@@ -129,9 +140,9 @@ const Services = () => {
 
                 {/* Services Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    {services.map((service, index) => (
+                    {services.map((service) => (
                         <div
-                            key={index}
+                            key={service.id}
                             className="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
                         >
                             {/* Image */}
@@ -155,8 +166,9 @@ const Services = () => {
                                     {service.description}
                                 </p>
 
+                                {/* ✅ UPDATED LINK */}
                                 <Link
-                                    to="/contact"
+                                    to={`/services/${service.id}`}
                                     className="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition-colors"
                                 >
                                     Learn More
