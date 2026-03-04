@@ -2,13 +2,36 @@ import { FaArrowRight, FaShieldAlt, FaWater, FaLeaf } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import CountUp from './CountUp';
 import { motion } from 'framer-motion';
-import img1  from "../assets/bg.jpg";
+
+// ================= IMAGE IMPORTS =================
+import img1 from "../assets/bg.jpg";
+import bg2 from "../assets/bg2.jpg";
+import bg3_1 from "../assets/bg3 (1).jpg";
+import bg3_2 from "../assets/bg3 (2).jpg";
+import gallery1 from "../assets/Gallery/img1.jpg";
+import gallery2 from "../assets/Gallery/img2.jpg";
+import gallery3 from "../assets/Gallery/img3.jpg";
+
 const Hero = () => {
+
+    // ================= CAROUSEL IMAGES =================
+    const carouselImages = [
+        bg2,
+        bg3_1,
+        bg3_2,
+        gallery1,
+        gallery2,
+        gallery3,
+        bg2,      // duplicate for smooth loop
+        bg3_1,    // duplicate for smooth loop
+    ];
+
     return (
         <section
             id="home"
             className="relative min-h-screen flex items-center overflow-hidden"
         >
+
             {/* ================= BACKGROUND ================= */}
             <div className="absolute inset-0 z-0">
                 <img
@@ -49,10 +72,12 @@ const Hero = () => {
                             <FaShieldAlt className="text-white mr-2 text-xl" />
                             <span className="text-white font-bold text-sm">Safety First</span>
                         </div>
+
                         <div className="flex items-center px-5 py-3 bg-industrial-800 rounded-lg shadow-xl">
                             <FaWater className="text-primary-400 mr-2 text-xl" />
                             <span className="text-white font-bold text-sm">Water Treatment</span>
                         </div>
+
                         <div className="flex items-center px-5 py-3 bg-green-700 rounded-lg shadow-xl">
                             <FaLeaf className="text-white mr-2 text-xl" />
                             <span className="text-white font-bold text-sm">Eco Friendly</span>
@@ -85,21 +110,28 @@ const Hero = () => {
                             </div>
                             <div className="text-industrial-300 text-sm">Years Experience</div>
                         </div>
+
                         <div>
                             <div className="text-3xl md:text-4xl font-bold text-primary-400">
                                 <CountUp end="500" suffix="+" />
                             </div>
                             <div className="text-industrial-300 text-sm">Active Clients</div>
                         </div>
+
                         <div>
                             <div className="text-3xl md:text-4xl font-bold text-primary-400">
                                 <CountUp end="1000" suffix="+" />
                             </div>
                             <div className="text-industrial-300 text-sm">Projects Delivered</div>
                         </div>
+
                         <div>
-                            <div className="text-3xl md:text-4xl font-bold text-primary-400">24/7</div>
-                            <div className="text-industrial-300 text-sm">Support Available</div>
+                            <div className="text-3xl md:text-4xl font-bold text-primary-400">
+                                24/7
+                            </div>
+                            <div className="text-industrial-300 text-sm">
+                                Support Available
+                            </div>
                         </div>
                     </div>
 
@@ -116,16 +148,7 @@ const Hero = () => {
                                     ease: 'linear',
                                 }}
                             >
-                                {[
-                                    '/src/assets/bg2.jpg',
-                                    '/src/assets/bg3 (1).jpg',
-                                    '/src/assets/bg3 (2).jpg',
-                                    '/src/assets/Gallery/img1.jpg',
-                                    '/src/assets/Gallery/img2.jpg',
-                                    '/src/assets/Gallery/img3.jpg',
-                                    '/src/assets/bg2.jpg',
-                                    '/src/assets/bg3 (1).jpg',
-                                ].map((img, index) => (
+                                {carouselImages.map((img, index) => (
                                     <motion.div
                                         key={index}
                                         className="relative min-w-[220px] sm:min-w-[260px] md:min-w-[300px] h-[160px] sm:h-[200px] md:h-[240px] rounded-2xl overflow-hidden shadow-2xl bg-white/10 backdrop-blur-lg"
@@ -149,6 +172,7 @@ const Hero = () => {
                                     </motion.div>
                                 ))}
                             </motion.div>
+
                         </div>
 
                         {/* Shadow Reflection */}
@@ -164,6 +188,7 @@ const Hero = () => {
                     <div className="w-1 h-3 bg-white/50 rounded-full"></div>
                 </div>
             </div>
+
         </section>
     );
 };
