@@ -8,4 +8,4 @@ const ServicesPage = () => {
     );
 };
 
-export default Services;
+export default ServicesPage;
