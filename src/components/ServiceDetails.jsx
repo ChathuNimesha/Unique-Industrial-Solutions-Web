@@ -7,39 +7,7 @@ import {
     FaTools
 } from "react-icons/fa";
 
-// Import your images
-import protectiveGear from "../assets/Protective-Gear.png";
-import industrialEnvironmental from "../assets/Industrial Environmental.jpg";
-
-// ================= SERVICE DATA =================
-const servicesData = [
-    {
-        id: "ppe",
-        title: "Personal Protective Equipment",
-        image: protectiveGear,
-        description:
-            "We provide high-quality certified personal protective equipment designed to ensure maximum worker safety across industrial environments.",
-        features: [
-            "Certified safety helmets & gloves",
-            "Industrial-grade safety shoes",
-            "Respiratory & face protection",
-            "Customized PPE solutions"
-        ]
-    },
-    {
-        id: "environmental",
-        title: "Industrial Environmental Solutions",
-        image: industrialEnvironmental,
-        description:
-            "Comprehensive environmental protection systems to ensure regulatory compliance and sustainable industrial operations.",
-        features: [
-            "Pollution control systems",
-            "Waste management solutions",
-            "Environmental audits",
-            "Regulatory compliance support"
-        ]
-    }
-];
+import servicesData from "../data/services";
 
 const ServiceDetails = () => {
     const { id } = useParams();

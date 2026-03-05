@@ -36,15 +36,15 @@ const Navbar = () => {
         { name: "About", href: "/about" },
         { name: "Services", href: "/services" },
         { name: "Contact", href: "/contact" },
-        { name: "Highlights", href:"/gallery"}
+        { name: "Highlights", href: "/gallery" }
     ];
 
     return (
         <nav
-            className={`fixed w-full z-50 transition-all duration-300 
+            className={`fixed w-full z-50 transition-all duration-500 
             ${scrolled
-                    ? "backdrop-blur-lg bg-white/70 dark:bg-black/40 shadow-lg py-3"
-                    : "backdrop-blur-xl bg-white/30 dark:bg-black/30 py-5"
+                    ? "bg-gray-950/95 backdrop-blur-lg shadow-2xl shadow-black/40 py-3 border-b border-white/10"
+                    : "backdrop-blur-xl bg-white/10 dark:bg-black/30 py-5"
                 }`}
         >
             <div className="max-w-7xl mx-auto px-6">
@@ -66,16 +66,23 @@ const Navbar = () => {
                                 key={link.name}
                                 to={link.href}
                                 className={`
-                                    text-gray-700 dark:text-gray-300 
                                     font-medium tracking-wide
-                                    relative group transition 
-                                    ${location.pathname === link.href ? "text-primary-500" : ""}
+                                    relative group transition-colors duration-300
+                                    ${scrolled
+                                        ? location.pathname === link.href
+                                            ? "text-primary-400"
+                                            : "text-gray-200 hover:text-white"
+                                        : location.pathname === link.href
+                                            ? "text-primary-500"
+                                            : "text-gray-700 dark:text-gray-300 hover:text-primary-500"
+                                    }
                                 `}
                             >
                                 {link.name}
                                 <span
-                                    className={`absolute bottom-0 left-0 h-0.5 bg-primary-500 transition-all 
+                                    className={`absolute bottom-0 left-0 h-0.5 transition-all 
                                     duration-300 group-hover:w-full
+                                    ${scrolled ? "bg-primary-400" : "bg-primary-500"}
                                     ${location.pathname === link.href ? "w-full" : "w-0"}`}
                                 ></span>
                             </Link>
@@ -88,7 +95,11 @@ const Navbar = () => {
                         {/* Phone */}
                         <a
                             href="tel:+94347223666"
-                            className="text-gray-700 dark:text-gray-300 hover:text-primary-500 flex items-center"
+                            className={`flex items-center transition-colors duration-300
+                                ${scrolled
+                                    ? "text-gray-200 hover:text-primary-400"
+                                    : "text-gray-700 dark:text-gray-300 hover:text-primary-500"
+                                }`}
                         >
                             <FaPhone className="mr-2" />
                             +94 34 7223 666
@@ -106,7 +117,7 @@ const Navbar = () => {
                                 <FaMoon className="text-gray-900" />
                             )}
 
-                           
+
                         </button>
 
                         {/* CTA */}
@@ -122,7 +133,8 @@ const Navbar = () => {
                     {/* Mobile Menu Button */}
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="lg:hidden p-2 rounded-lg text-gray-700 dark:text-gray-300"
+                        className={`lg:hidden p-2 rounded-lg transition-colors duration-300
+                            ${scrolled ? "text-gray-100" : "text-gray-700 dark:text-gray-300"}`}
                     >
                         {isOpen ? <HiX className="h-7 w-7" /> : <HiMenu className="h-7 w-7" />}
                     </button>
@@ -147,7 +159,7 @@ const Navbar = () => {
                                     hover:bg-primary-50 dark:hover:bg-gray-700 
                                     transition 
                                     ${location.pathname === link.href &&
-                                        "bg-primary-100 dark:bg-gray-700 text-primary-600"}
+                                    "bg-primary-100 dark:bg-gray-700 text-primary-600"}
                                 `}
                             >
                                 {link.name}

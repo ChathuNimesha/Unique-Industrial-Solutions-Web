@@ -12,7 +12,7 @@ import ContactPage from './pages/ContactPage';
 import ServicesPage from './pages/ServicesPage';
 import GalleryPage from './pages/GalleryPage';
 import IndustriesPage from './pages/IndustriesPage';
-import ServiceDetails from "./pages/ServiceDetails";
+import ServiceDetailsPage from "./pages/ServiceDetailsPage";
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/industries" element={<IndustriesPage />} />
-          <Route path="/services/:id" element={<ServiceDetails />} />
+          <Route path="/services/:id" element={<ServiceDetailsPage />} />
         </Routes>
 
         <Footer />

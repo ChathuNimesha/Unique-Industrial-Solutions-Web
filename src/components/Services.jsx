@@ -93,7 +93,7 @@ const Services = () => {
             image: walkthroughSurveys,
         },
         {
-            id: "trainings",
+            id: "safety-trainings",
             icon: FaChalkboardTeacher,
             title: "Industrial Safety Trainings",
             description:
@@ -140,9 +140,9 @@ const Services = () => {
 
                 {/* Services Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    {services.map((service) => (
+                    {services.map((service, index) => (
                         <div
-                            key={service.id}
+                            key={index}
                             className="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
                         >
                             {/* Image */}
@@ -166,7 +166,6 @@ const Services = () => {
                                     {service.description}
                                 </p>
 
-                                {/* ✅ UPDATED LINK */}
                                 <Link
                                     to={`/services/${service.id}`}
                                     className="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition-colors"
