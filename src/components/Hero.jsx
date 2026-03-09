@@ -87,7 +87,7 @@ const Hero = () => {
                     {/* -------- CTA Buttons -------- */}
                     <div className="flex flex-col sm:flex-row gap-4 mb-16">
                         <Link
-                            to="/products"
+                            to="/services"
                             className="group inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white font-bold text-lg rounded-xl shadow-2xl hover:scale-105 transition-all duration-300"
                         >
                             Explore Our Solutions
