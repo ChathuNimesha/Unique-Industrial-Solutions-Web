@@ -11,19 +11,26 @@ import bg3_2 from "../assets/bg3 (2).jpg";
 import gallery1 from "../assets/Gallery/img1.jpg";
 import gallery2 from "../assets/Gallery/img2.jpg";
 import gallery3 from "../assets/Gallery/img3.jpg";
+import logo1 from "../assets/logo/logo1.png"
+import logo2 from "../assets/logo/logo2.png"
+import logo3 from "../assets/logo/logo3.png"
+import logo4 from "../assets/logo/logo4.jpeg"
+import logo5 from "../assets/logo/logo5.png"
+import logo6 from "../assets/logo/logo6.webp"
+import logo7 from "../assets/logo/logo7.jpeg"
+import bgVideo from "../assets/Videos/bg.mp4"
 
 const Hero = () => {
 
     // ================= CAROUSEL IMAGES =================
     const carouselImages = [
-        bg2,
-        bg3_1,
-        bg3_2,
-        gallery1,
-        gallery2,
-        gallery3,
-        bg2,      // duplicate for smooth loop
-        bg3_1,    // duplicate for smooth loop
+        logo1,
+        logo2,
+        logo3,
+        logo4,
+        logo5,
+        logo6,
+        logo7,
     ];
 
     return (
@@ -32,14 +39,21 @@ const Hero = () => {
             className="relative min-h-screen flex items-center overflow-hidden"
         >
 
-            {/* ================= BACKGROUND ================= */}
-            <div className="absolute inset-0 z-0">
-                <img
-                    src={img1}
-                    alt="Industrial facility"
+            {/* ================= BACKGROUND VIDEO ================= */}
+            <div className="absolute inset-0 z-0 overflow-hidden">
+
+                <video
+                    src={bgVideo}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
                     className="w-full h-full object-cover"
                 />
+
+                {/* Overlay for text readability */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/80"></div>
+
             </div>
 
             {/* ================= GLOW BLOBS ================= */}
@@ -137,28 +151,31 @@ const Hero = () => {
 
                     {/* ================= 3D IMAGE CAROUSEL ================= */}
                     <div className="relative perspective-[1200px] overflow-hidden">
-                        <div className="flex justify-center items-center h-[240px] sm:h-[280px] md:h-[320px]">
+                        <div className="flex justify-center items-center h-[180px] sm:h-[200px] md:h-[220px]">
 
                             <motion.div
-                                className="flex gap-10"
+                                className="flex gap-6"
                                 animate={{ x: ['0%', '-50%'] }}
                                 transition={{
                                     repeat: Infinity,
-                                    duration: 32,
+                                    duration: 20,
                                     ease: 'linear',
                                 }}
                             >
                                 {carouselImages.map((img, index) => (
                                     <motion.div
                                         key={index}
-                                        className="relative min-w-[220px] sm:min-w-[260px] md:min-w-[300px] h-[160px] sm:h-[200px] md:h-[240px] rounded-2xl overflow-hidden shadow-2xl bg-white/10 backdrop-blur-lg"
+                                        className="relative flex items-center justify-center
+                                        min-w-[160px] sm:min-w-[180px] md:min-w-[200px]
+                                        h-[120px] sm:h-[140px] md:h-[160px]
+                                        rounded-xl overflow-hidden shadow-xl bg-white p-2"
                                         initial={{
-                                            rotateY: index % 2 === 0 ? -12 : 12,
-                                            scale: 0.95,
+                                            rotateY: index % 2 === 0 ? -10 : 10,
+                                            scale: 0.9,
                                         }}
                                         whileHover={{
                                             rotateY: 0,
-                                            scale: 1.1,
+                                            scale: 1.05,
                                             z: 40,
                                         }}
                                         style={{ transformStyle: 'preserve-3d' }}
@@ -166,17 +183,17 @@ const Hero = () => {
                                         <img
                                             src={img}
                                             alt="Gallery"
-                                            className="w-full h-full object-cover"
+                                            className="max-w-full max-h-full object-contain"
                                         />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-white/10"></div>
+
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-white/10"></div>
                                     </motion.div>
                                 ))}
                             </motion.div>
 
                         </div>
 
-                        {/* Shadow Reflection */}
-                        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[75%] h-10 bg-black/40 blur-2xl rounded-full"></div>
+                        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[65%] h-8 bg-black/40 blur-2xl rounded-full"></div>
                     </div>
 
                 </div>
