@@ -4,13 +4,6 @@ import CountUp from './CountUp';
 import { motion } from 'framer-motion';
 
 // ================= IMAGE IMPORTS =================
-import img1 from "../assets/bg.jpg";
-import bg2 from "../assets/bg2.jpg";
-import bg3_1 from "../assets/bg3 (1).jpg";
-import bg3_2 from "../assets/bg3 (2).jpg";
-import gallery1 from "../assets/Gallery/img1.jpg";
-import gallery2 from "../assets/Gallery/img2.jpg";
-import gallery3 from "../assets/Gallery/img3.jpg";
 import logo1 from "../assets/logo/logo1.png"
 import logo2 from "../assets/logo/logo2.png"
 import logo3 from "../assets/logo/logo3.png"
@@ -18,11 +11,11 @@ import logo4 from "../assets/logo/logo4.jpeg"
 import logo5 from "../assets/logo/logo5.png"
 import logo6 from "../assets/logo/logo6.webp"
 import logo7 from "../assets/logo/logo7.jpeg"
+
 import bgVideo from "../assets/Videos/bg.mp4"
 
 const Hero = () => {
 
-    // ================= CAROUSEL IMAGES =================
     const carouselImages = [
         logo1,
         logo2,
@@ -51,7 +44,6 @@ const Hero = () => {
                     className="w-full h-full object-cover"
                 />
 
-                {/* Overlay for text readability */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/80"></div>
 
             </div>
@@ -117,7 +109,7 @@ const Hero = () => {
                     </div>
 
                     {/* -------- Stats -------- */}
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-white/20 pt-12 mb-24">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-white/20 pt-12 mb-20">
                         <div>
                             <div className="text-3xl md:text-4xl font-bold text-primary-400">
                                 <CountUp end="9" suffix="+" />
@@ -149,51 +141,55 @@ const Hero = () => {
                         </div>
                     </div>
 
-                    {/* ================= 3D IMAGE CAROUSEL ================= */}
-                    <div className="relative perspective-[1200px] overflow-hidden">
-                        <div className="flex justify-center items-center h-[180px] sm:h-[200px] md:h-[220px]">
+                    {/* ================= PREMIUM LOGO SLIDER ================= */}
+                    <div className="relative mt-10 overflow-hidden">
+
+                        <p className="text-center text-industrial-300 text-sm tracking-widest uppercase mb-8">
+                            Trusted by Industry Leaders
+                        </p>
+
+                        {/* Fade edges */}
+                        <div className="absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-black to-transparent z-10"></div>
+                        <div className="absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-black to-transparent z-10"></div>
+
+                        <div className="flex items-center h-[90px]">
 
                             <motion.div
-                                className="flex gap-6"
+                                className="flex gap-16 items-center"
                                 animate={{ x: ['0%', '-50%'] }}
                                 transition={{
                                     repeat: Infinity,
-                                    duration: 20,
+                                    duration: 25,
                                     ease: 'linear',
                                 }}
                             >
-                                {carouselImages.map((img, index) => (
-                                    <motion.div
+                                {[...carouselImages, ...carouselImages].map((img, index) => (
+                                    <div
                                         key={index}
-                                        className="relative flex items-center justify-center
-                                        min-w-[160px] sm:min-w-[180px] md:min-w-[200px]
-                                        h-[120px] sm:h-[140px] md:h-[160px]
-                                        rounded-xl overflow-hidden shadow-xl bg-white p-2"
-                                        initial={{
-                                            rotateY: index % 2 === 0 ? -10 : 10,
-                                            scale: 0.9,
-                                        }}
-                                        whileHover={{
-                                            rotateY: 0,
-                                            scale: 1.05,
-                                            z: 40,
-                                        }}
-                                        style={{ transformStyle: 'preserve-3d' }}
+                                        className="flex items-center justify-center
+                                        min-w-[120px] md:min-w-[150px] h-[60px]"
                                     >
                                         <img
                                             src={img}
-                                            alt="Gallery"
-                                            className="max-w-full max-h-full object-contain"
+                                            alt="Client Logo"
+                                            className="
+                                            max-h-full
+                                            object-contain
+                                            opacity-70
+                                            grayscale
+                                            hover:grayscale-0
+                                            hover:opacity-100
+                                            hover:scale-110
+                                            transition-all
+                                            duration-300
+                                            "
                                         />
-
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-white/10"></div>
-                                    </motion.div>
+                                    </div>
                                 ))}
                             </motion.div>
 
                         </div>
 
-                        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[65%] h-8 bg-black/40 blur-2xl rounded-full"></div>
                     </div>
 
                 </div>

@@ -95,8 +95,8 @@ const Industries = () => {
                                     href="#contact"
                                     className="inline-flex items-center text-primary-400 font-semibold hover:text-primary-300 transition-colors group/link"
                                 >
-                                    Learn More
-                                    <svg
+                                        Learn More
+                                    <svg        
                                         className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform"
                                         fill="none"
                                         stroke="currentColor"
