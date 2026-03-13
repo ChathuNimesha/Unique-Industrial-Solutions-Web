@@ -155,7 +155,7 @@ const Hero = () => {
                         <div className="flex items-center h-[90px]">
 
                             <motion.div
-                                className="flex gap-16 items-center"
+                                className="flex gap-14 items-center"
                                 animate={{ x: ['0%', '-50%'] }}
                                 transition={{
                                     repeat: Infinity,
@@ -166,23 +166,20 @@ const Hero = () => {
                                 {[...carouselImages, ...carouselImages].map((img, index) => (
                                     <div
                                         key={index}
-                                        className="flex items-center justify-center
-                                        min-w-[120px] md:min-w-[150px] h-[60px]"
+                                        className="flex items-center justify-center w-[120px] h-[60px]"
                                     >
                                         <img
                                             src={img}
                                             alt="Client Logo"
                                             className="
-                                            max-h-full
-                                            object-contain
-                                            opacity-70
-                                            grayscale
-                                            hover:grayscale-0
-                                            hover:opacity-100
-                                            hover:scale-110
-                                            transition-all
-                                            duration-300
-                                            "
+                        w-[110px]
+                        h-[50px]
+                        object-contain
+                        opacity-90
+                        hover:scale-110
+                        transition-all
+                        duration-300
+                        "
                                         />
                                     </div>
                                 ))}
