@@ -116,33 +116,7 @@ const Acheivements = () => {
                     ))}
                 </div>
 
-                {/* Stats Section */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 
-                bg-gradient-to-r from-primary-600 to-primary-500 
-                rounded-2xl p-8 md:p-12 shadow-[0_0_20px_rgba(0,0,0,0.6)]">
-                    
-                    <div className="text-center">
-                        <div className="text-4xl md:text-5xl font-display font-bold mb-2">500+</div>
-                        <div className="text-primary-100">Active Clients</div>
-                    </div>
-
-                    <div className="text-center">
-                        <div className="text-4xl md:text-5xl font-display font-bold mb-2">15+</div>
-                        <div className="text-primary-100">Industries Served</div>
-                    </div>
-
-                    <div className="text-center">
-                        <div className="text-4xl md:text-5xl font-display font-bold mb-2">1000+</div>
-                        <div className="text-primary-100">Projects Completed</div>
-                    </div>
-
-                    <div className="text-center">
-                        <div className="text-4xl md:text-5xl font-display font-bold mb-2">98%</div>
-                        <div className="text-primary-100">Client Satisfaction</div>
-                    </div>
-
-                </div>
-
+                
             </div>
         </section>
     );
