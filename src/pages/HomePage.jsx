@@ -12,7 +12,6 @@ const HomePage = () => {
             <Hero />
             <About />
             <Services />
-            <LatestProducts />
             <Industries />
             <Acheivements/>
             <Sustainability />
