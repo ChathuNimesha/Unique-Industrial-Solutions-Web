@@ -170,39 +170,37 @@ const Hero = () => {
                 <div className="absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
                 {/* Scrolling logos */}
-            <div className="flex items-center h-[100px] overflow-hidden">
-                <motion.div
-                    className="flex gap-12 md:gap-24 items-center"
-                    animate={{ x: ['0%', '-50%'] }}
-                    transition={{
-                        repeat: Infinity,
-                        duration: 35,
-                        ease: 'linear',
-                    }}
-                >
-                    {[...carouselImages, ...carouselImages].map((img, index) => {
-                        const isLarge = img === logo3 || img === logo5;
-                        return (
-                            <div
-                                key={index}
-                                className={`flex items-center justify-center flex-shrink-0 h-[100px] ${
-                                    isLarge ? 'w-[160px] md:w-[220px]' : 'w-[140px] md:w-[180px]'
-                                }`}
-                            >
-                                <img
-                                    src={img}
-                                    alt="Partner Logo"
-                                    className={`object-contain opacity-90 hover:opacity-100 drop-shadow-sm hover:drop-shadow-lg transition-all duration-500 cursor-pointer ${
-                                        isLarge 
-                                            ? 'max-w-full max-h-[80px] md:max-h-[95px] hover:scale-105' 
-                                            : 'max-w-full max-h-[60px] md:max-h-[75px] hover:scale-110'
-                                    }`}
-                                />
-                            </div>
-                        );
-                    })}
-                </motion.div>
-            </div>
+                <div className="flex items-center h-[100px] overflow-hidden">
+                    <motion.div
+                        className="flex gap-12 md:gap-24 items-center"
+                        animate={{ x: ['0%', '-50%'] }}
+                        transition={{
+                            repeat: Infinity,
+                            duration: 35,
+                            ease: 'linear',
+                        }}
+                    >
+                        {[...carouselImages, ...carouselImages].map((img, index) => {
+                            const isLarge = img === logo3 || img === logo5;
+                            return (
+                                <div
+                                    key={index}
+                                    className={`flex items-center justify-center flex-shrink-0 h-[100px] ${isLarge ? 'w-[160px] md:w-[220px]' : 'w-[140px] md:w-[180px]'
+                                        }`}
+                                >
+                                    <img
+                                        src={img}
+                                        alt="Partner Logo"
+                                        className={`object-contain opacity-90 hover:opacity-100 drop-shadow-sm hover:drop-shadow-lg transition-all duration-500 cursor-pointer ${isLarge
+                                                ? 'max-w-full max-h-[80px] md:max-h-[95px] hover:scale-105'
+                                                : 'max-w-full max-h-[60px] md:max-h-[75px] hover:scale-110'
+                                            }`}
+                                    />
+                                </div>
+                            );
+                        })}
+                    </motion.div>
+                </div>
 
             </div>
         </>
