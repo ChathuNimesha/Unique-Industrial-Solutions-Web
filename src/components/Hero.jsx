@@ -27,6 +27,7 @@ const Hero = () => {
     ];
 
     return (
+        <>
         <section
             id="home"
             className="relative min-h-screen flex items-center overflow-hidden"
@@ -141,54 +142,6 @@ const Hero = () => {
                         </div>
                     </div>
 
-                    {/* ================= PREMIUM LOGO SLIDER ================= */}
-                    <div className="relative mt-10 overflow-hidden">
-
-                        <p className="text-center text-industrial-300 text-sm tracking-widest uppercase mb-8">
-                            Trusted by Industry Leaders
-                        </p>
-
-                        {/* Fade edges */}
-                        <div className="absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-black to-transparent z-10"></div>
-                        <div className="absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-black to-transparent z-10"></div>
-
-                        <div className="flex items-center h-[90px]">
-
-                            <motion.div
-                                className="flex gap-14 items-center"
-                                animate={{ x: ['0%', '-50%'] }}
-                                transition={{
-                                    repeat: Infinity,
-                                    duration: 25,
-                                    ease: 'linear',
-                                }}
-                            >
-                                {[...carouselImages, ...carouselImages].map((img, index) => (
-                                    <div
-                                        key={index}
-                                        className="flex items-center justify-center w-[120px] h-[60px]"
-                                    >
-                                        <img
-                                            src={img}
-                                            alt="Client Logo"
-                                            className="
-                        w-[110px]
-                        h-[50px]
-                        object-contain
-                        opacity-90
-                        hover:scale-110
-                        transition-all
-                        duration-300
-                        "
-                                        />
-                                    </div>
-                                ))}
-                            </motion.div>
-
-                        </div>
-
-                    </div>
-
                 </div>
             </div>
 
@@ -200,6 +153,50 @@ const Hero = () => {
             </div>
 
         </section>
+
+        {/* ================= TRUSTED BRANDS STRIP ================= */}
+        <div className="relative bg-white border-t border-b border-industrial-100 shadow-lg py-6 overflow-hidden">
+
+            {/* Pill label */}
+            <div className="flex justify-center mb-5">
+                <span className="inline-flex items-center gap-2 px-5 py-1.5 bg-primary-50 border border-primary-200 text-primary-700 rounded-full text-xs font-semibold tracking-widest uppercase shadow-sm">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary-500 animate-pulse inline-block"></span>
+                    Trusted by Industry Leaders
+                </span>
+            </div>
+
+            {/* Edge fades — white this time */}
+            <div className="absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+            <div className="absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+
+            {/* Scrolling logos */}
+            <div className="flex items-center h-[72px] overflow-hidden">
+                <motion.div
+                    className="flex gap-16 items-center"
+                    animate={{ x: ['0%', '-50%'] }}
+                    transition={{
+                        repeat: Infinity,
+                        duration: 28,
+                        ease: 'linear',
+                    }}
+                >
+                    {[...carouselImages, ...carouselImages].map((img, index) => (
+                        <div
+                            key={index}
+                            className="flex items-center justify-center w-[130px] h-[60px] flex-shrink-0"
+                        >
+                            <img
+                                src={img}
+                                alt="Partner Logo"
+                                className="w-[115px] h-[55px] object-contain opacity-90 hover:opacity-100 hover:scale-110 transition-all duration-300"
+                            />
+                        </div>
+                    ))}
+                </motion.div>
+            </div>
+
+        </div>
+        </>
     );
 };
 

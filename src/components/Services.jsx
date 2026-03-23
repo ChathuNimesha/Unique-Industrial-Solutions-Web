@@ -35,6 +35,7 @@ const Services = () => {
             description:
                 "High-quality PPE including helmets, gloves, masks, safety shoes, coveralls, and more—ensuring maximum protection for industrial workers.",
             image: protectiveGear,
+            productLink: "/products",
         },
         {
             id: "environmental",
@@ -166,25 +167,38 @@ const Services = () => {
                                     {service.description}
                                 </p>
 
-                                <Link
-                                    to={`/services/${service.id}`}
-                                    className="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition-colors"
-                                >
-                                    Learn More
-                                    <svg
-                                        className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
+                                <div className="flex items-center gap-4 flex-wrap">
+                                    <Link
+                                        to={`/services/${service.id}`}
+                                        className="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition-colors"
                                     >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            d="M9 5l7 7-7 7"
-                                        />
-                                    </svg>
-                                </Link>
+                                        Learn More
+                                        <svg
+                                            className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth={2}
+                                                d="M9 5l7 7-7 7"
+                                            />
+                                        </svg>
+                                    </Link>
+                                    {service.productLink && (
+                                        <Link
+                                            to={service.productLink}
+                                            className="inline-flex items-center gap-1 px-3 py-1.5 bg-primary-600 text-white text-sm font-semibold rounded-lg hover:bg-primary-700 transition-colors"
+                                        >
+                                            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                                            </svg>
+                                            View Products
+                                        </Link>
+                                    )}
+                                </div>
                             </div>
                         </div>
                     ))}
