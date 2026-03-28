@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { FaSearch, FaShieldAlt, FaWater } from 'react-icons/fa';
+import { FaSearch } from 'react-icons/fa';
 
 const ProductFilters = ({
     searchQuery,
@@ -9,115 +9,78 @@ const ProductFilters = ({
     categories,
     productCounts
 }) => {
-    const categoryIcons = {
-        safety: FaShieldAlt,
-        environmental: FaWater,
-    };
-
     return (
-        <div className="bg-white rounded-xl shadow-lg p-6 mb-8 sticky top-24 z-10">
-            <div className="flex flex-col lg:flex-row gap-6">
-                {/* Search Bar */}
-                <div className="flex-1">
-                    <label className="block text-sm font-semibold text-industrial-700 mb-2">
-                        Search Products
-                    </label>
-                    <div className="relative">
-                        <FaSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-industrial-400" />
-                        <input
-                            type="text"
-                            placeholder="Search by product name or category..."
-                            value={searchQuery}
-                            onChange={(e) => setSearchQuery(e.target.value)}
-                            className="w-full pl-12 pr-4 py-3 border-2 border-industrial-200 rounded-lg focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-all outline-none"
-                        />
-                        {searchQuery && (
-                            <button
-                                onClick={() => setSearchQuery('')}
-                                className="absolute right-4 top-1/2 -translate-y-1/2 text-industrial-400 hover:text-industrial-600"
-                            >
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </button>
-                        )}
+        <div className="bg-white/80 backdrop-blur-xl border border-white/50 rounded-3xl shadow-xl shadow-industrial-900/5 p-6 md:p-8 mb-12 sticky top-24 z-30 transition-all duration-300">
+            <div className="flex flex-col gap-6">
+                {/* Search Bar - Sleek and modern */}
+                <div className="w-full relative group">
+                    <div className="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none">
+                        <FaSearch className="text-industrial-400 group-focus-within:text-primary-500 transition-colors text-lg" />
                     </div>
+                    <input
+                        type="text"
+                        placeholder="Search for products, categories, or keywords..."
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        className="w-full pl-14 pr-12 py-4 bg-industrial-50/50 border border-industrial-200 rounded-2xl focus:border-primary-500 focus:ring-4 focus:ring-primary-500/10 transition-all outline-none text-industrial-800 placeholder:text-industrial-400 font-medium text-lg"
+                    />
+                    {searchQuery && (
+                        <button
+                            onClick={() => setSearchQuery('')}
+                            className="absolute inset-y-0 right-0 pr-5 flex items-center text-industrial-400 hover:text-primary-600 transition-colors"
+                        >
+                            <svg className="w-6 h-6 bg-industrial-100 rounded-full p-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    )}
                 </div>
 
-                {/* Category Filters */}
-                <div className="lg:w-auto">
-                    <label className="block text-sm font-semibold text-industrial-700 mb-2">
-                        Filter by Category
-                    </label>
-                    <div className="flex flex-wrap gap-3">
+                {/* Categories Tab Bar - Horizontal Scroll */}
+                <div className="relative mt-2">
+                    <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-white via-white/80 to-transparent pointer-events-none z-10 hidden md:block"></div>
+                    <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-white via-white/80 to-transparent pointer-events-none z-10 hidden md:block"></div>
+                    
+                    <div className="flex gap-3 overflow-x-auto pb-4 pt-1 px-1 snap-x snap-mandatory [&::-webkit-scrollbar]:h-1.5 [&::-webkit-scrollbar-thumb]:bg-industrial-200 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-industrial-300 transition-all">
                         {/* All Products */}
                         <button
                             onClick={() => setSelectedCategory('all')}
-                            className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 ${selectedCategory === 'all'
-                                    ? 'bg-primary-600 text-white shadow-lg scale-105'
-                                    : 'bg-industrial-100 text-industrial-700 hover:bg-industrial-200'
-                                }`}
+                            className={`snap-start whitespace-nowrap px-6 py-3 rounded-full font-semibold transition-all duration-300 flex items-center gap-3 border flex-shrink-0 ${
+                                selectedCategory === 'all'
+                                    ? 'bg-primary-600 border-primary-600 text-white shadow-lg shadow-primary-500/30 scale-[1.02]'
+                                    : 'bg-white border-industrial-200 text-industrial-600 hover:bg-industrial-50 hover:border-industrial-300 hover:text-industrial-900'
+                            }`}
                         >
                             <span>All Products</span>
-                            <span className="px-2 py-0.5 bg-white/20 rounded-full text-xs">
+                            <span className={`px-2.5 py-0.5 rounded-full text-xs font-bold ${
+                                selectedCategory === 'all' ? 'bg-white/25' : 'bg-industrial-100 text-industrial-500'
+                            }`}>
                                 {productCounts.all}
                             </span>
                         </button>
 
-                        {/* Category Buttons */}
-                        {categories.map((category) => {
-                            const Icon = categoryIcons[category.id];
-                            return (
-                                <button
-                                    key={category.id}
-                                    onClick={() => setSelectedCategory(category.id)}
-                                    className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 ${selectedCategory === category.id
-                                            ? 'bg-primary-600 text-white shadow-lg scale-105'
-                                            : 'bg-industrial-100 text-industrial-700 hover:bg-industrial-200'
-                                        }`}
-                                >
-                                    {Icon && <Icon className="text-lg" />}
-                                    <span>{category.name}</span>
-                                    <span className="px-2 py-0.5 bg-white/20 rounded-full text-xs">
-                                        {productCounts[category.id] || 0}
-                                    </span>
-                                </button>
-                            );
-                        })}
+                        {/* Mapped Category Buttons */}
+                        {categories.map((category) => (
+                            <button
+                                key={category.id}
+                                onClick={() => setSelectedCategory(category.id)}
+                                className={`snap-start whitespace-nowrap px-6 py-3 rounded-full font-semibold transition-all duration-300 flex items-center gap-3 border flex-shrink-0 ${
+                                    selectedCategory === category.id
+                                        ? 'bg-primary-600 border-primary-600 text-white shadow-lg shadow-primary-500/30 scale-[1.02]'
+                                        : 'bg-white border-industrial-200 text-industrial-600 hover:bg-industrial-50 hover:border-industrial-300 hover:text-industrial-900'
+                                }`}
+                            >
+                                <span>{category.name}</span>
+                                <span className={`px-2.5 py-0.5 rounded-full text-xs font-bold ${
+                                    selectedCategory === category.id ? 'bg-white/25' : 'bg-industrial-100 text-industrial-500'
+                                }`}>
+                                    {productCounts[category.id] || 0}
+                                </span>
+                            </button>
+                        ))}
                     </div>
                 </div>
             </div>
-
-            {/* Active Filters Display */}
-            {(searchQuery || selectedCategory !== 'all') && (
-                <div className="mt-4 pt-4 border-t border-industrial-200">
-                    <div className="flex items-center gap-2 flex-wrap">
-                        <span className="text-sm font-semibold text-industrial-700">Active Filters:</span>
-                        {searchQuery && (
-                            <span className="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm flex items-center gap-2">
-                                Search: "{searchQuery}"
-                                <button
-                                    onClick={() => setSearchQuery('')}
-                                    className="hover:text-primary-900"
-                                >
-                                    ×
-                                </button>
-                            </span>
-                        )}
-                        {selectedCategory !== 'all' && (
-                            <span className="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm flex items-center gap-2">
-                                {categories.find(c => c.id === selectedCategory)?.name}
-                                <button
-                                    onClick={() => setSelectedCategory('all')}
-                                    className="hover:text-primary-900"
-                                >
-                                    ×
-                                </button>
-                            </span>
-                        )}
-                    </div>
-                </div>
-            )}
         </div>
     );
 };
