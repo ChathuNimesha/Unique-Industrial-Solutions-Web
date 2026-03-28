@@ -6,9 +6,40 @@ import {
     FaProjectDiagram,
     FaCalendarAlt,
     FaChevronLeft,
-    FaChevronRight
+    FaChevronRight,
+    FaHandsHelping
 } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
+
+// Import Gallery & Event/Training Images
+import img1 from "../assets/Gallery/img1.jpg";
+import img2 from "../assets/Gallery/img2.jpg";
+import img3 from "../assets/Gallery/img3.jpg";
+import img4 from "../assets/Gallery/img4.jpg";
+import training1 from "../assets/Industrial Safety Trainings.jpg";
+
+// Import Project Images
+import t2024_1 from "../assets/Projects/Tobacco2024/1.jpeg";
+import t2024_2 from "../assets/Projects/Tobacco2024/2.jpeg";
+import t2024_3 from "../assets/Projects/Tobacco2024/3.jpeg";
+import t2024_4 from "../assets/Projects/Tobacco2024/4.jpeg";
+
+import t2020_1 from "../assets/Projects/Tobacco2020/1.jpeg";
+import t2020_2 from "../assets/Projects/Tobacco2020/2.jpeg";
+import t2020_3 from "../assets/Projects/Tobacco2020/3.jpeg";
+import t2020_4 from "../assets/Projects/Tobacco2020/4.jpeg";
+
+// Import Award Images
+import a1 from "../assets/Awards/1.jpg";
+import a2 from "../assets/Awards/2.jpg";
+import a3 from "../assets/Awards/3.jpg";
+import a4 from "../assets/Awards/4.jpg";
+import a5 from "../assets/Awards/5.jpg";
+import a1_1 from "../assets/Awards/1.1.jpg";
+import a1_2 from "../assets/Awards/1.2.jpg";
+import a1_3 from "../assets/Awards/1.3.jpg";
+import a1_4 from "../assets/Awards/1.4.jpg";
+import a1_5 from "../assets/Awards/1.5.jpg";
 
 const Gallery = () => {
 
@@ -21,6 +52,7 @@ const Gallery = () => {
         { name: "Trainings", icon: FaChalkboardTeacher },
         { name: "Awards", icon: FaMedal },
         { name: "Projects", icon: FaProjectDiagram },
+        { name: "Beyond Business", icon: FaHandsHelping },
     ];
 
     /* =======================
@@ -31,45 +63,51 @@ const Gallery = () => {
             title: "Annual Safety Event",
             category: "Events",
             images: [
-                "/assets/gallery/events/event1.jpg",
-                "/assets/gallery/events/event2.jpg",
-                "/assets/gallery/events/event3.jpg",
+                img1,
+                img2,
             ],
         },
         {
             title: "Fire Safety Training",
             category: "Trainings",
             images: [
-                "/assets/gallery/trainings/training1.jpg",
-                "/assets/gallery/trainings/training2.jpg",
+                training1,
+            ],
+        },
+        {
+            title: "Beyond Business Initiatives",
+            category: "Beyond Business",
+            description: "Committed to community, continuous improvement, and impact beyond our core operations.",
+            images: [
+                img3,
+                img4,
             ],
         },
         {
             title: "Award Ceremony 2024",
             category: "Awards",
             images: [
-                "/assets/gallery/awards/award1.jpg",
+                a1,
             ],
         },
         {
             title: "Ceylon Tobacco – 2024",
             category: "Projects",
             images: [
-                "/src/assets/Projects/Tobacco2024/1.jpeg",
-                "/src/assets/Projects/Tobacco2024/2.jpeg",
-                "/src/assets/Projects/Tobacco2024/3.jpeg",
-                "/src/assets/Projects/Tobacco2024/4.jpeg",
-                "/src/assets/Projects/Tobacco2024/5.jpeg", 
+                t2024_1,
+                t2024_2,
+                t2024_3,
+                t2024_4,
             ],
         },
         {
             title: "Ceylon Tobacco – 2020",
             category: "Projects",
             images: [
-                "/src/assets/Projects/Tobacco2020/1.jpeg",
-                "/src/assets/Projects/Tobacco2020/2.jpeg",
-                "/src/assets/Projects/Tobacco2020/3.jpeg",
-                "/src/assets/Projects/Tobacco2020/4.jpeg",
+                t2020_1,
+                t2020_2,
+                t2020_3,
+                t2020_4,
             ],
         },
         {
@@ -77,12 +115,12 @@ const Gallery = () => {
             category: "Awards",
             description: "1st Runner-Up for National Supply Chain Performance Excellence.",
             images: [
-                "/src/assets/Awards/5.jpg",
-                "/src/assets/Awards/1.1.jpg",
-                "/src/assets/Awards/1.2.jpg",
-                "/src/assets/Awards/1.3.jpg",
-                "/src/assets/Awards/1.4.jpg",
-                "/src/assets/Awards/1.5.jpg",
+                a5,
+                a1_1,
+                a1_2,
+                a1_3,
+                a1_4,
+                a1_5,
             ],
         },
         {
@@ -90,7 +128,7 @@ const Gallery = () => {
             category: "Awards",
             description: "Best Safety Solutions & Product Industry Brand of the Year.",
             images: [
-                "/src/assets/Awards/1.jpg",
+                a4,
             ],
         },
         {
@@ -98,7 +136,7 @@ const Gallery = () => {
             category: "Awards",
             description: "Awarded for outstanding performance in industrial safety solutions.",
             images: [
-                "/src/assets/Awards/4.jpg",
+                a2,
             ],
         },
         {
@@ -106,15 +144,7 @@ const Gallery = () => {
             category: "Awards",
             description: "Best Safety Solutions & Product Industry of the Year.",
             images: [
-                "/src/assets/Awards/2.jpg",
-            ],
-        },
-        {
-            title: "Pinnacle Awards 2024",
-            category: "Awards",
-            description: "Best Entrepreneur of the Year – Safety Equipment Industry.",
-            images: [
-                "/src/assets/Awards/3.jpg",
+                a3,
             ],
         },
     ];
