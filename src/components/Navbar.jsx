@@ -37,10 +37,10 @@ const Navbar = () => {
 
     const navLinks = [
         { name: "Home", href: "/" },
-        { name: "Products", href: "/products" },
+        { name: "About", href: "/about" },
         { name: "Services", href: "/services" },
-        { name: "Highlights", href: "/gallery" },
-        { name: "About", href: "/about" }
+        { name: "Products", href: "/products" },
+        { name: "Highlights", href: "/gallery" }
     ];
 
     return (
@@ -52,43 +52,49 @@ const Navbar = () => {
             <div 
                 className={`mx-auto transition-all duration-700 ease-in-out ${
                     scrolled 
-                        ? "max-w-6xl bg-white/90 dark:bg-gray-950/90 backdrop-blur-xl shadow-2xl shadow-industrial-900/10 border border-white/20 dark:border-gray-800 rounded-full py-2.5 px-3 sm:px-6" 
-                        : "max-w-7xl bg-transparent py-5 px-0"
+                        ? "max-w-7xl bg-gray-950/95 backdrop-blur-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-white/10 rounded-full py-2.5 px-4 sm:px-6" 
+                        : "max-w-7xl bg-transparent py-5 px-2 lg:px-0"
                 }`}
             >
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center gap-4 lg:gap-8">
                     
                     {/* Logo */}
-                    <Link to="/" className="flex items-center group relative z-50">
+                    <Link to="/" className="flex items-center group relative z-50 flex-shrink-0">
                         <img
                             src={logo}
                             alt="Unique Industrial Solutions"
                             className={`transition-all duration-500 ease-out transform group-hover:scale-[1.03] object-contain ${
-                                scrolled ? 'h-10 lg:h-12' : 'h-12 lg:h-16'
+                                scrolled ? 'h-9 sm:h-10 lg:h-12' : 'h-10 sm:h-12 lg:h-16'
                             }`}
                         />
                     </Link>
 
-                    {/* Desktop Navigation Links (Centered) */}
-                    <div className="hidden lg:flex items-center justify-center space-x-1 absolute left-1/2 transform -translate-x-1/2">
+                    {/* Desktop Navigation Links (Responsive Flex) */}
+                    <div className="hidden lg:flex flex-1 items-center justify-center space-x-1 lg:space-x-2">
                         {navLinks.map((link) => {
                             const isActive = location.pathname === link.href;
+                            
+                            // Determine text colors based on scroll and dark mode
+                            const textStyles = scrolled
+                                ? isActive 
+                                    ? "text-primary-400 font-bold" 
+                                    : "text-gray-300 hover:text-white"
+                                : isActive 
+                                    ? "text-primary-600 dark:text-primary-400 font-bold" 
+                                    : "text-gray-800 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400";
+
                             return (
                                 <Link
                                     key={link.name}
                                     to={link.href}
                                     className={`
-                                        relative px-5 py-2 rounded-full font-medium text-sm tracking-wide transition-all duration-300 group overflow-hidden
-                                        ${isActive 
-                                            ? "text-primary-600 dark:text-primary-400 font-bold" 
-                                            : "text-industrial-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
-                                        }
+                                        relative px-4 py-2 rounded-full font-medium text-[15px] tracking-wide transition-all duration-300 group overflow-hidden ${textStyles}
                                     `}
                                 >
                                     <span className="relative z-10">{link.name}</span>
                                     {/* Active pill background */}
                                     {isActive && (
-                                        <span className="absolute inset-0 bg-primary-50 dark:bg-primary-900/20 rounded-full -z-0"></span>
+                                        <span className={`absolute inset-0 rounded-full -z-0 ${scrolled ? 'bg-primary-500/10' : 'bg-primary-50 dark:bg-primary-900/20'}`}></span>
                                     )}
                                     {/* Hover slide effect */}
                                     {!isActive && (
@@ -100,25 +106,37 @@ const Navbar = () => {
                     </div>
 
                     {/* Right Action Icons & CTA */}
-                    <div className="hidden lg:flex items-center space-x-3">
+                    <div className="hidden lg:flex items-center space-x-3 xl:space-x-4 flex-shrink-0">
                         
                         {/* Phone CTA Indicator */}
                         <a
                             href="tel:+94347223666"
-                            className="hidden xl:flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold text-industrial-600 dark:text-gray-300 hover:text-primary-600 hover:bg-industrial-50 dark:hover:bg-gray-800 transition-all duration-300 group"
+                            className={`hidden xl:flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold transition-all duration-300 group ${
+                                scrolled 
+                                    ? "text-gray-300 hover:text-white hover:bg-white/5" 
+                                    : "text-industrial-700 dark:text-gray-300 hover:text-primary-600 hover:bg-industrial-50 dark:hover:bg-gray-800"
+                            }`}
                         >
-                            <div className="w-8 h-8 rounded-full bg-industrial-100 dark:bg-gray-800 flex items-center justify-center group-hover:bg-primary-100 group-hover:text-primary-600 transition-colors">
+                            <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${
+                                scrolled
+                                    ? "bg-white/10 text-gray-300 group-hover:bg-primary-500/20 group-hover:text-primary-400"
+                                    : "bg-industrial-100 dark:bg-gray-800 text-industrial-600 dark:text-gray-400 group-hover:bg-primary-100 group-hover:text-primary-600"
+                            }`}>
                                 <FaPhoneAlt className="text-xs" />
                             </div>
                             <span>+94 34 7223 666</span>
                         </a>
 
-                        <div className="h-6 w-px bg-industrial-200 dark:bg-gray-700 mx-2 hidden xl:block"></div>
+                        <div className={`h-6 w-px mx-1 hidden xl:block ${scrolled ? 'bg-gray-700' : 'bg-industrial-200 dark:bg-gray-700'}`}></div>
 
                         {/* Dark Mode Toggle */}
                         <button
                             onClick={() => setDarkMode(!darkMode)}
-                            className="w-10 h-10 rounded-full flex items-center justify-center text-industrial-500 dark:text-gray-400 hover:bg-industrial-100 dark:hover:bg-gray-800 hover:text-primary-600 transition-all duration-300"
+                            className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
+                                scrolled
+                                    ? "text-gray-400 hover:text-white hover:bg-white/10"
+                                    : "text-industrial-500 dark:text-gray-400 hover:bg-industrial-100 dark:hover:bg-gray-800 hover:text-primary-600"
+                            }`}
                             aria-label="Toggle Dark Mode"
                         >
                             {darkMode ? <FaSun className="text-lg text-yellow-500" /> : <FaMoon className="text-lg" />}
@@ -135,10 +153,14 @@ const Navbar = () => {
                     </div>
 
                     {/* Mobile Menu Trigger */}
-                    <div className="flex items-center gap-3 lg:hidden relative z-50">
+                    <div className="flex items-center gap-3 lg:hidden relative z-50 flex-shrink-0">
                         <button
                             onClick={() => setDarkMode(!darkMode)}
-                            className="w-10 h-10 rounded-full flex items-center justify-center bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm text-industrial-700 dark:text-gray-300 shadow-sm border border-white/20 dark:border-gray-700"
+                            className={`w-10 h-10 rounded-full flex items-center justify-center shadow-sm border transition-colors ${
+                                scrolled 
+                                    ? "bg-gray-800 text-gray-300 border-gray-700" 
+                                    : "bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm text-industrial-700 dark:text-gray-300 border-white/20 dark:border-gray-700"
+                            }`}
                         >
                             {darkMode ? <FaSun className="text-yellow-500" /> : <FaMoon />}
                         </button>
