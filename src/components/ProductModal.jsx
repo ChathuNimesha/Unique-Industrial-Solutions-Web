@@ -52,9 +52,32 @@ const ProductModal = ({ product, onClose }) => {
                         </div>
 
                         <img
-                            src={product.image}
+                            src={
+                                product.image.includes('product-placeholder.png')
+                                    ? product.brand === '3M'
+                                        ? '/images/placeholder-3m.png'
+                                        : product.id.startsWith('VAU') || product.name.includes('VAULTEX')
+                                            ? '/images/placeholder-vaultex.png'
+                                            : product.image
+                                    : product.image
+                            }
+                            onError={(e) => {
+                                e.target.onerror = null;
+                                if (product.brand === '3M') {
+                                    e.target.src = '/images/placeholder-3m.png';
+                                    e.target.classList.remove('mix-blend-multiply');
+                                } else if (product.id.startsWith('VAU') || product.name.includes('VAULTEX')) {
+                                    e.target.src = '/images/placeholder-vaultex.png';
+                                    e.target.classList.remove('mix-blend-multiply');
+                                } else {
+                                    e.target.src = '/images/product-placeholder.png';
+                                    e.target.classList.remove('mix-blend-multiply');
+                                }
+                            }}
                             alt={product.name}
-                            className="relative z-10 w-full h-full object-contain mix-blend-multiply drop-shadow-2xl transition-transform duration-700 hover:scale-105"
+                            className={`relative z-10 w-full h-full object-contain ${
+                                product.image.includes('placeholder') ? '' : 'mix-blend-multiply'
+                            } drop-shadow-2xl transition-transform duration-700 hover:scale-105`}
                         />
                         {product.latest && (
                             <div className="absolute top-6 left-6 z-20 px-4 py-1.5 bg-gradient-to-r from-accent-gold to-yellow-500 text-white text-xs font-bold rounded-full shadow-lg shadow-accent-gold/30 tracking-widest">
@@ -68,8 +91,21 @@ const ProductModal = ({ product, onClose }) => {
                         {/* Header */}
                         <div className="sticky top-0 bg-white/90 backdrop-blur-sm px-8 py-6 flex justify-between items-start border-b border-industrial-100 z-10">
                             <div className="flex-1 pr-4">
-                                <div className="inline-block px-3 py-1 bg-primary-50 text-primary-600 text-xs font-bold rounded-full tracking-wider uppercase mb-3 shadow-sm">
-                                    {product.subcategory}
+                                <div className="flex flex-wrap gap-2 mb-3">
+                                    <div className="px-3 py-1 bg-primary-50 text-primary-600 text-xs font-bold rounded-full tracking-wider uppercase shadow-sm">
+                                        {product.subcategory}
+                                    </div>
+                                    <div className={`px-3 py-1 flex items-center gap-2 text-white text-xs font-black rounded-full shadow-sm tracking-widest ${
+                                        product.brand === '3M' ? 'bg-red-600' : 'bg-industrial-900/10 text-industrial-500'
+                                    }`}>
+                                        {product.brand === '3M' ? (
+                                            <>
+                                                <span>3M BRAND</span>
+                                                <span className="opacity-50">|</span>
+                                                <span className="text-[9px] tracking-[0.1em] uppercase bg-white/20 px-2 py-0.5 rounded">Authorized Distributor</span>
+                                            </>
+                                        ) : 'INDUSTRIAL SOLUTION'}
+                                    </div>
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-display font-extrabold text-industrial-900 leading-tight">
                                     {product.name}

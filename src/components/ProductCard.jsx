@@ -12,12 +12,46 @@ const ProductCard = ({ product, onClick }) => {
                 <div className="absolute inset-0 bg-gradient-to-tr from-industrial-100/60 to-transparent rounded-full scale-150 transform -translate-x-1/4 translate-y-1/4 group-hover:scale-110 transition-transform duration-700 ease-in-out z-0"></div>
                 
                 <img
-                    src={product.image}
+                    src={
+                        product.image.includes('product-placeholder.png')
+                            ? product.brand === '3M'
+                                ? '/images/placeholder-3m.png'
+                                : product.id.startsWith('VAU') || product.name.includes('VAULTEX')
+                                    ? '/images/placeholder-vaultex.png'
+                                    : product.image
+                            : product.image
+                    }
+                    onError={(e) => {
+                        e.target.onerror = null;
+                        if (product.brand === '3M') {
+                            e.target.src = '/images/placeholder-3m.png';
+                            e.target.classList.remove('mix-blend-multiply');
+                        } else if (product.id.startsWith('VAU') || product.name.includes('VAULTEX')) {
+                            e.target.src = '/images/placeholder-vaultex.png';
+                            e.target.classList.remove('mix-blend-multiply');
+                        } else {
+                            e.target.src = '/images/product-placeholder.png';
+                            e.target.classList.remove('mix-blend-multiply');
+                        }
+                    }}
                     alt={product.name}
-                    className="relative z-10 w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500 ease-out drop-shadow-sm group-hover:drop-shadow-md"
+                    className={`relative z-10 w-full h-full object-contain ${
+                        product.image.includes('placeholder') ? '' : 'mix-blend-multiply'
+                    } group-hover:scale-110 transition-transform duration-500 ease-out drop-shadow-sm group-hover:drop-shadow-md`}
                     loading="lazy"
                 />
                 
+                {product.brand === '3M' && (
+                    <div className="absolute top-4 left-4 z-20 flex flex-col items-start gap-1 group-hover:scale-105 transition-transform origin-top-left">
+                        <div className="px-2 py-0.5 bg-red-600 text-white text-[10px] font-black rounded shadow-md tracking-tighter">
+                            3M
+                        </div>
+                        <div className="px-1.5 py-0.5 bg-white/95 backdrop-blur-sm border border-red-100 text-red-600 text-[8px] font-black rounded shadow-sm tracking-widest whitespace-nowrap uppercase">
+                            Authorized Distributor
+                        </div>
+                    </div>
+                )}
+
                 {product.latest && (
                     <div className="absolute top-4 right-4 z-20 px-3 py-1 bg-gradient-to-r from-accent-gold to-yellow-500 text-white text-xs font-bold rounded-full shadow-lg shadow-accent-gold/30 tracking-wider">
                         NEW

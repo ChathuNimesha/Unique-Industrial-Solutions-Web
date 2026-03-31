@@ -1,24 +1,24 @@
 {
   "categories": [
     {
-      "id": "head_eye",
-      "name": "Head & Eye Protection",
-      "icon": "helmet"
-    },
-    {
-      "id": "hearing",
-      "name": "Hearing Protection",
-      "icon": "ear"
-    },
-    {
       "id": "respiratory",
       "name": "Respiratory Protection",
       "icon": "mask"
     },
     {
-      "id": "hand",
-      "name": "Hand Protection",
-      "icon": "hand"
+      "id": "hearing",
+      "name": "Hearing Protection",
+      "icon": "headphones"
+    },
+    {
+      "id": "eye_face",
+      "name": "Eye & Face Protection",
+      "icon": "glasses"
+    },
+    {
+      "id": "head",
+      "name": "Head Protection",
+      "icon": "helmet"
     },
     {
       "id": "body",
@@ -26,14 +26,24 @@
       "icon": "vest"
     },
     {
+      "id": "spill",
+      "name": "Spill Response",
+      "icon": "alert"
+    },
+    {
+      "id": "welding",
+      "name": "Welding Protection",
+      "icon": "fire"
+    },
+    {
       "id": "fall",
       "name": "Fall Protection",
       "icon": "anchor"
     },
     {
-      "id": "fire",
-      "name": "Fire Protection",
-      "icon": "fire"
+      "id": "accessories",
+      "name": "Accessories",
+      "icon": "box"
     },
     {
       "id": "foot",
@@ -41,54 +51,29 @@
       "icon": "boot"
     },
     {
-      "id": "emergency",
-      "name": "Emergency Preparedness Equipment",
+      "id": "hand",
+      "name": "Hand Protection",
+      "icon": "hand"
+    },
+    {
+      "id": "road_safety",
+      "name": "Road & Site Safety",
       "icon": "alert"
     },
     {
-      "id": "other",
-      "name": "Other Protection",
-      "icon": "box"
-    },
-    {
-      "id": "welding_protection",
-      "name": "Welding Protection",
-      "icon": "box"
-    },
-    {
-      "id": "vaultex",
-      "name": "VAULTEX",
-      "icon": "box"
-    },
-    {
-      "id": "wellding_protection",
-      "name": "Wellding Protection",
-      "icon": "box"
-    },
-    {
-      "id": "road_safety_outdoor",
-      "name": "Road Safety -Outdoor",
-      "icon": "box"
-    },
-    {
-      "id": "road_safety_tape",
-      "name": "Road Safety - Tape",
-      "icon": "box"
-    },
-    {
-      "id": "marine",
-      "name": "Marine",
-      "icon": "box"
-    },
-    {
       "id": "medical",
-      "name": "Medical",
-      "icon": "box"
+      "name": "Medical Items",
+      "icon": "shield"
     },
     {
-      "id": "3m_accessories",
-      "name": "3M - Accessories",
-      "icon": "box"
+      "id": "fire_safety",
+      "name": "Fire Safety",
+      "icon": "fire"
+    },
+    {
+      "id": "emergency_eyewash",
+      "name": "Emergency & Eye Wash",
+      "icon": "alert"
     }
   ],
   "products": [
@@ -103,7 +88,8 @@
       "specs": {
         "Item Code": "MAS0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "MAS0002",
@@ -116,7 +102,8 @@
       "specs": {
         "Item Code": "MAS0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "MAS0003",
@@ -129,7 +116,8 @@
       "specs": {
         "Item Code": "MAS0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "MAS0004",
@@ -142,7 +130,8 @@
       "specs": {
         "Item Code": "MAS0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "MAS0005",
@@ -155,7 +144,8 @@
       "specs": {
         "Item Code": "MAS0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "MAS0006",
@@ -168,7 +158,8 @@
       "specs": {
         "Item Code": "MAS0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "MAS0007",
@@ -181,12 +172,13 @@
       "specs": {
         "Item Code": "MAS0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "EME0001",
       "name": "Eye Wash Bottle - 500ML",
-      "category": "respiratory",
+      "category": "emergency_eyewash",
       "subcategory": "Respiratory Protection",
       "image": "/images/products/EME0001.jpeg",
       "description": "",
@@ -194,12 +186,13 @@
       "specs": {
         "Item Code": "EME0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "EME0002",
       "name": "SS Wall Mounted Eye Wash Basin",
-      "category": "respiratory",
+      "category": "emergency_eyewash",
       "subcategory": "Respiratory Protection",
       "image": "/images/products/EME0002.jpeg",
       "description": "",
@@ -207,12 +200,13 @@
       "specs": {
         "Item Code": "EME0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "EME0003",
       "name": "SS Pedestal Mounted Eye Wash Basin",
-      "category": "respiratory",
+      "category": "emergency_eyewash",
       "subcategory": "Respiratory Protection",
       "image": "/images/products/EME0003.jpeg",
       "description": "",
@@ -220,12 +214,13 @@
       "specs": {
         "Item Code": "EME0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "EME0004",
       "name": "SS Pedestal Mounted Eye Wash Station with Shower",
-      "category": "respiratory",
+      "category": "emergency_eyewash",
       "subcategory": "Respiratory Protection",
       "image": "/images/products/EME0004.jpeg",
       "description": "",
@@ -233,12 +228,13 @@
       "specs": {
         "Item Code": "EME0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "EME0005",
       "name": "Portable Eye Wash Station - 8Gallon",
-      "category": "respiratory",
+      "category": "emergency_eyewash",
       "subcategory": "Respiratory Protection",
       "image": "/images/products/EME0005.jpeg",
       "description": "",
@@ -246,7 +242,8 @@
       "specs": {
         "Item Code": "EME0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "OTH0009",
@@ -259,7 +256,8 @@
       "specs": {
         "Item Code": "OTH0009",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "OTH0010",
@@ -272,7 +270,8 @@
       "specs": {
         "Item Code": "OTH0010",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "OTH0011",
@@ -285,7 +284,8 @@
       "specs": {
         "Item Code": "OTH0011",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "OTH0012",
@@ -298,7 +298,8 @@
       "specs": {
         "Item Code": "OTH0012",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "OTH0013",
@@ -311,7 +312,8 @@
       "specs": {
         "Item Code": "OTH0013",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "OTH0014",
@@ -324,7 +326,8 @@
       "specs": {
         "Item Code": "OTH0014",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "OTH0004",
@@ -337,7 +340,8 @@
       "specs": {
         "Item Code": "OTH0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "MAS0000",
@@ -350,7 +354,8 @@
       "specs": {
         "Item Code": "MAS0000",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "MAS0012",
@@ -363,7 +368,8 @@
       "specs": {
         "Item Code": "MAS0012",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "VAU0002",
@@ -376,7 +382,8 @@
       "specs": {
         "Item Code": "VAU0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HER0001",
@@ -389,7 +396,8 @@
       "specs": {
         "Item Code": "HER0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HER0002",
@@ -402,7 +410,8 @@
       "specs": {
         "Item Code": "HER0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HER0003",
@@ -415,7 +424,8 @@
       "specs": {
         "Item Code": "HER0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HER0004",
@@ -428,12 +438,13 @@
       "specs": {
         "Item Code": "HER0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "UDY0001",
       "name": "UDYOGI UD71 Safety Spectacles - Clear",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "Eye & Face Protection",
       "image": "/images/products/UDY0001.jpeg",
       "description": "",
@@ -441,12 +452,13 @@
       "specs": {
         "Item Code": "UDY0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "UDY0002",
       "name": "UDYOGI UD71 Safety Spectacles- Dark",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "Eye & Face Protection",
       "image": "/images/products/UDY0002.jpeg",
       "description": "",
@@ -454,12 +466,13 @@
       "specs": {
         "Item Code": "UDY0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "UDY0003",
       "name": "UDYOGI UD49 Safety Goggle",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "Eye & Face Protection",
       "image": "/images/products/UDY0003.jpeg",
       "description": "",
@@ -467,12 +480,13 @@
       "specs": {
         "Item Code": "UDY0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "VAU0004",
       "name": "VAULTEX Oval shape Dark Spectacles",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "Eye & Face Protection",
       "image": "/images/products/VAU0004.jpeg",
       "description": "",
@@ -480,12 +494,13 @@
       "specs": {
         "Item Code": "VAU0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "VAU0005",
       "name": "VAULTEX UV /AS Spectacles (ANSI-Z87.1/CE EN166F)",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "Eye & Face Protection",
       "image": "/images/products/VAU0005.jpeg",
       "description": "",
@@ -493,12 +508,13 @@
       "specs": {
         "Item Code": "VAU0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "VAU0006",
       "name": "VAULTEX UV/AS UD 46 Dark Spectacles (ANSI-Z87.1/CE EN166F)",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "Eye & Face Protection",
       "image": "/images/products/VAU0006.jpeg",
       "description": "",
@@ -506,12 +522,13 @@
       "specs": {
         "Item Code": "VAU0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "VAU0007",
       "name": "VAULTEX UV/AS Over Spectacles (ANSI-Z87.1/CE EN166F)",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "Eye & Face Protection",
       "image": "/images/products/VAU0007.jpeg",
       "description": "",
@@ -519,12 +536,13 @@
       "specs": {
         "Item Code": "VAU0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "VAU0008",
       "name": "VAULTEX UV/AS UD46 Dark Over Spectacles (ANSI-Z87.1/CE EN166F)",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "Eye & Face Protection",
       "image": "/images/products/VAU0008.jpeg",
       "description": "",
@@ -532,12 +550,13 @@
       "specs": {
         "Item Code": "VAU0008",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "EYP0001",
       "name": "Helmet Attachment Clear Visor",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "Eye & Face Protection",
       "image": "/images/products/EYP0001.jpeg",
       "description": "",
@@ -545,12 +564,13 @@
       "specs": {
         "Item Code": "EYP0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "EYP0002",
       "name": "Heavy Dust Goggle",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "Eye & Face Protection",
       "image": "/images/products/EYP0002.jpeg",
       "description": "",
@@ -558,12 +578,13 @@
       "specs": {
         "Item Code": "EYP0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "EYP0003",
       "name": "LAIF Dust Goggle",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "Eye & Face Protection",
       "image": "/images/products/EYP0003.jpeg",
       "description": "",
@@ -571,12 +592,13 @@
       "specs": {
         "Item Code": "EYP0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "EYP0004",
       "name": "Dust Goggle",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "Eye & Face Protection",
       "image": "/images/products/EYP0004.jpeg",
       "description": "",
@@ -584,12 +606,13 @@
       "specs": {
         "Item Code": "EYP0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "EYP0005",
       "name": "Face Visor For Glasses Frame",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "Eye & Face Protection",
       "image": "/images/products/EYP0005.jpeg",
       "description": "",
@@ -597,12 +620,13 @@
       "specs": {
         "Item Code": "EYP0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "WEP0001",
       "name": "Welding Cutting Goggle",
-      "category": "welding_protection",
+      "category": "welding",
       "subcategory": "Welding Protection",
       "image": "/images/products/WEP0001.jpeg",
       "description": "",
@@ -610,12 +634,13 @@
       "specs": {
         "Item Code": "WEP0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "WEP0002",
       "name": "Auto Dark Welding Spectacle",
-      "category": "welding_protection",
+      "category": "welding",
       "subcategory": "Welding Protection",
       "image": "/images/products/WEP0002.jpeg",
       "description": "",
@@ -623,12 +648,13 @@
       "specs": {
         "Item Code": "WEP0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "WEP0003",
       "name": "Welding Head Shield",
-      "category": "welding_protection",
+      "category": "welding",
       "subcategory": "Welding Protection",
       "image": "/images/products/WEP0003.jpeg",
       "description": "",
@@ -636,12 +662,13 @@
       "specs": {
         "Item Code": "WEP0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "WEP0004",
       "name": "Welding Hand Shield",
-      "category": "welding_protection",
+      "category": "welding",
       "subcategory": "Welding Protection",
       "image": "/images/products/WEP0004.jpeg",
       "description": "",
@@ -649,12 +676,13 @@
       "specs": {
         "Item Code": "WEP0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "WEP0005",
       "name": "LI Auto Dark Welding Helmet",
-      "category": "welding_protection",
+      "category": "welding",
       "subcategory": "Welding Protection",
       "image": "/images/products/WEP0005.jpeg",
       "description": "",
@@ -662,12 +690,13 @@
       "specs": {
         "Item Code": "WEP0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOA0002",
       "name": "Leather Apron 24\"x36\"",
-      "category": "welding_protection",
+      "category": "welding",
       "subcategory": "Welding Protection",
       "image": "/images/products/BOA0002.jpeg",
       "description": "",
@@ -675,12 +704,13 @@
       "specs": {
         "Item Code": "BOA0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HEP0001",
       "name": "H MARK Ventilation Hard Hat with Rachet Adjustment",
-      "category": "head_eye",
+      "category": "head",
       "subcategory": "Head Protection",
       "image": "/images/products/HEP0001.jpeg",
       "description": "",
@@ -688,12 +718,13 @@
       "specs": {
         "Item Code": "HEP0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HEP0002",
       "name": "H MARK (A1) Hard Hat with Rachet Adjustment",
-      "category": "head_eye",
+      "category": "head",
       "subcategory": "Head Protection",
       "image": "/images/products/HEP0002.jpeg",
       "description": "",
@@ -701,12 +732,13 @@
       "specs": {
         "Item Code": "HEP0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HEP0003",
       "name": "3 - STAR Pin Lock Helmet",
-      "category": "head_eye",
+      "category": "head",
       "subcategory": "Head Protection",
       "image": "/images/products/HEP0003.jpeg",
       "description": "",
@@ -714,12 +746,13 @@
       "specs": {
         "Item Code": "HEP0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HEP0004",
       "name": "Bumper Cap",
-      "category": "head_eye",
+      "category": "head",
       "subcategory": "Head Protection",
       "image": "/images/products/HEP0004.jpeg",
       "description": "",
@@ -727,12 +760,13 @@
       "specs": {
         "Item Code": "HEP0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HEP0005",
       "name": "H MARK Helmet Harness",
-      "category": "head_eye",
+      "category": "head",
       "subcategory": "Head Protection",
       "image": "/images/products/HEP0005.jpeg",
       "description": "",
@@ -740,12 +774,13 @@
       "specs": {
         "Item Code": "HEP0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HEP0006",
       "name": "Disposable Non-Woven Head Cap",
-      "category": "head_eye",
+      "category": "head",
       "subcategory": "Head Protection",
       "image": "/images/products/HEP0006.jpeg",
       "description": "",
@@ -753,12 +788,13 @@
       "specs": {
         "Item Code": "HEP0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HEP0007",
       "name": "Reusable Head Cap",
-      "category": "head_eye",
+      "category": "head",
       "subcategory": "Head Protection",
       "image": "/images/products/HEP0007.jpeg",
       "description": "",
@@ -766,12 +802,13 @@
       "specs": {
         "Item Code": "HEP0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HEP0008",
       "name": "Chin Guard",
-      "category": "head_eye",
+      "category": "head",
       "subcategory": "Head Protection",
       "image": "/images/products/HEP0008.jpeg",
       "description": "",
@@ -779,12 +816,13 @@
       "specs": {
         "Item Code": "HEP0008",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HEP0009",
       "name": "Brow Guard with Face Shield",
-      "category": "head_eye",
+      "category": "head",
       "subcategory": "Head Protection",
       "image": "/images/products/HEP0009.jpeg",
       "description": "",
@@ -792,12 +830,13 @@
       "specs": {
         "Item Code": "HEP0009",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "001",
       "name": "VAULTEX SAFETY HELMET WITH VISOR GUARD",
-      "category": "head_eye",
+      "category": "head",
       "subcategory": "Head Protection",
       "image": "/images/products/001.jpeg",
       "description": "",
@@ -805,12 +844,13 @@
       "specs": {
         "Item Code": "001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "3M",
       "name": "3M Safety Helmet with Chinstrap",
-      "category": "head_eye",
+      "category": "head",
       "subcategory": "Head Protection",
       "image": "/images/products/3M.jpeg",
       "description": "",
@@ -818,12 +858,13 @@
       "specs": {
         "Item Code": "3M",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "VAU0001",
       "name": "VAULTEX Ventilation Hard Hat with Rachet Adjustment",
-      "category": "head_eye",
+      "category": "head",
       "subcategory": "Head Protection",
       "image": "/images/products/VAU0001.jpeg",
       "description": "",
@@ -831,7 +872,8 @@
       "specs": {
         "Item Code": "VAU0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOR0009",
@@ -844,7 +886,8 @@
       "specs": {
         "Item Code": "BOR0009",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FAP0001",
@@ -857,7 +900,8 @@
       "specs": {
         "Item Code": "FAP0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FAP0002",
@@ -870,7 +914,8 @@
       "specs": {
         "Item Code": "FAP0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FAP0003",
@@ -883,7 +928,8 @@
       "specs": {
         "Item Code": "FAP0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FAP0004",
@@ -896,7 +942,8 @@
       "specs": {
         "Item Code": "FAP0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FAP0005",
@@ -909,12 +956,13 @@
       "specs": {
         "Item Code": "FAP0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "UDY0004",
       "name": "UDYOGI Chemical Sorbent Mini Boom",
-      "category": "emergency",
+      "category": "spill",
       "subcategory": "Spill Response",
       "image": "/images/products/UDY0004.jpeg",
       "description": "",
@@ -922,12 +970,13 @@
       "specs": {
         "Item Code": "UDY0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "UDY0005",
       "name": "UDYOGI Chemical Sorbent Pads 25 PADS / BOX",
-      "category": "emergency",
+      "category": "spill",
       "subcategory": "Spill Response",
       "image": "/images/products/UDY0005.jpeg",
       "description": "",
@@ -935,12 +984,13 @@
       "specs": {
         "Item Code": "UDY0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIE0007",
       "name": "Foam - Fire Extinguisher",
-      "category": "emergency",
+      "category": "spill",
       "subcategory": "Spill Response",
       "image": "/images/products/FIE0007.jpeg",
       "description": "",
@@ -948,7 +998,8 @@
       "specs": {
         "Item Code": "FIE0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FAP0006",
@@ -961,7 +1012,8 @@
       "specs": {
         "Item Code": "FAP0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FAP0007",
@@ -974,7 +1026,8 @@
       "specs": {
         "Item Code": "FAP0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FAP0009",
@@ -987,12 +1040,13 @@
       "specs": {
         "Item Code": "FAP0009",
         "Price": "LKR 425,000.00"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "LTT000",
       "name": "safety lockout tagout",
-      "category": "other",
+      "category": "accessories",
       "subcategory": "Accessories & Other",
       "image": "/images/products/LTT000.jpeg",
       "description": "",
@@ -1000,12 +1054,13 @@
       "specs": {
         "Item Code": "LTT000",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "VAU0003",
       "name": "VAULTEX Oval shape Spectacles",
-      "category": "vaultex",
+      "category": "accessories",
       "subcategory": "VAULTEX",
       "image": "/images/products/VAU0003.jpeg",
       "description": "",
@@ -1013,20 +1068,22 @@
       "specs": {
         "Item Code": "VAU0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOA0001",
       "name": "Leather Apron",
-      "category": "wellding_protection",
-      "subcategory": "Wellding Protection",
+      "category": "welding",
+      "subcategory": "Welding Protection",
       "image": "/images/products/BOA0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "BOA0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOA0003",
@@ -1039,7 +1096,8 @@
       "specs": {
         "Item Code": "BOA0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOA0004",
@@ -1052,7 +1110,8 @@
       "specs": {
         "Item Code": "BOA0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOA0005",
@@ -1065,7 +1124,8 @@
       "specs": {
         "Item Code": "BOA0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOA0006",
@@ -1078,7 +1138,8 @@
       "specs": {
         "Item Code": "BOA0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOA0007",
@@ -1091,7 +1152,8 @@
       "specs": {
         "Item Code": "BOA0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOA0008",
@@ -1104,7 +1166,8 @@
       "specs": {
         "Item Code": "BOA0008",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOA0009",
@@ -1117,7 +1180,8 @@
       "specs": {
         "Item Code": "BOA0009",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOA0010",
@@ -1130,7 +1194,8 @@
       "specs": {
         "Item Code": "BOA0010",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOC0001",
@@ -1143,7 +1208,8 @@
       "specs": {
         "Item Code": "BOC0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOC0002",
@@ -1156,7 +1222,8 @@
       "specs": {
         "Item Code": "BOC0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOC0003",
@@ -1169,7 +1236,8 @@
       "specs": {
         "Item Code": "BOC0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOC0004",
@@ -1182,7 +1250,8 @@
       "specs": {
         "Item Code": "BOC0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOC0005",
@@ -1195,7 +1264,8 @@
       "specs": {
         "Item Code": "BOC0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOC0006",
@@ -1208,7 +1278,8 @@
       "specs": {
         "Item Code": "BOC0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOC0007",
@@ -1221,7 +1292,8 @@
       "specs": {
         "Item Code": "BOC0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOC0008",
@@ -1234,33 +1306,36 @@
       "specs": {
         "Item Code": "BOC0008",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOC0009",
       "name": "Rain Suit (Yellow / Black / Green)",
       "category": "body",
       "subcategory": "Body Protection - Coverall",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/BOC0009.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "BOC0009",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOC0010",
       "name": "Aluminized Full Kit (Jacket & Trouser)",
       "category": "body",
       "subcategory": "Body Protection - Coverall",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/BOC0010.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "BOC0010",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOC0011",
@@ -1273,7 +1348,8 @@
       "specs": {
         "Item Code": "BOC0011",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOC0013",
@@ -1286,7 +1362,8 @@
       "specs": {
         "Item Code": "BOC0013",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOC0014",
@@ -1299,46 +1376,50 @@
       "specs": {
         "Item Code": "BOC0014",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "0000",
       "name": "Reusable Chemical Overall",
       "category": "body",
       "subcategory": "Body Protection - Coverall",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/0000.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "0000",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BO0000",
       "name": "Workman Overall Kit Jacket & Trouser",
       "category": "body",
       "subcategory": "Body Protection - Coverall",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/BO0000.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "BO0000",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "00012",
       "name": "Leather trouser",
       "category": "body",
       "subcategory": "Body Protection - Coverall",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/00012.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "00012",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOR0001",
@@ -1351,2373 +1432,2556 @@
       "specs": {
         "Item Code": "BOR0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOR0004",
       "name": "Reflective Body Band - Blue",
       "category": "body",
       "subcategory": "Body Protection - Reflective",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/BOR0004.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "BOR0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOR0005",
       "name": "Reflective Jacket (Orange / Green)120g",
       "category": "body",
       "subcategory": "Body Protection - Reflective",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/BOR0005.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "BOR0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOR0006",
       "name": "Reflective Pocket Jacket (Orange / Green)",
       "category": "body",
       "subcategory": "Body Protection - Reflective",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/BOR0006.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "BOR0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOR0007",
       "name": "Reflective Pocket Jacket - Blue",
       "category": "body",
       "subcategory": "Body Protection - Reflective",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/BOR0007.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "BOR0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "BOC0012",
       "name": "Leather Full Kit (Jacket & Trouser)",
       "category": "body",
       "subcategory": "Body Protection - Reflective",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/BOC0012.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "BOC0012",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0001",
       "name": "Convex Mirror 45cm",
-      "category": "road_safety_outdoor",
+      "category": "road_safety",
       "subcategory": "Road Safety -Outdoor",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0002",
       "name": "Convex Mirror 60cm",
-      "category": "road_safety_outdoor",
+      "category": "road_safety",
       "subcategory": "Road Safety -Outdoor",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0003",
       "name": "Convex Mirror 80cm",
-      "category": "road_safety_outdoor",
+      "category": "road_safety",
       "subcategory": "Road Safety -Outdoor",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0003.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0004",
       "name": "Convex Mirror 100cm",
-      "category": "road_safety_outdoor",
+      "category": "road_safety",
       "subcategory": "Road Safety -Outdoor",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0004.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0005",
       "name": "Expandable Barrier 2M",
-      "category": "road_safety_outdoor",
+      "category": "road_safety",
       "subcategory": "Road Safety -Outdoor",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0005.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0006",
       "name": "Retractable Cone Bar",
-      "category": "road_safety_outdoor",
+      "category": "road_safety",
       "subcategory": "Road Safety -Outdoor",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0006.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0007",
       "name": "Traffic Cone Barricade Light",
-      "category": "road_safety_outdoor",
+      "category": "road_safety",
       "subcategory": "Road Safety -Outdoor",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0007.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0008",
       "name": "PVC Road Cone 75CM",
-      "category": "road_safety_outdoor",
+      "category": "road_safety",
       "subcategory": "Road Safety -Outdoor",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0008.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0008",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0009",
       "name": "PVC Road Cone 45CM",
-      "category": "road_safety_outdoor",
+      "category": "road_safety",
       "subcategory": "Road Safety -Outdoor",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0009.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0009",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0010",
       "name": "Plastic Road Cone 75CM",
-      "category": "road_safety_outdoor",
+      "category": "road_safety",
       "subcategory": "Road Safety -Outdoor",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0010.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0010",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0011",
       "name": "Plastic Road Cone 45CM",
-      "category": "road_safety_outdoor",
+      "category": "road_safety",
       "subcategory": "Road Safety -Outdoor",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0011.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0011",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0012",
       "name": "PVC Road Pole Flexible",
-      "category": "road_safety_outdoor",
+      "category": "road_safety",
       "subcategory": "Road Safety -Outdoor",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0012.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0012",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0013",
       "name": "Plastic Chain Red & white -6MM / 25M",
-      "category": "road_safety_outdoor",
+      "category": "road_safety",
       "subcategory": "Road Safety -Outdoor",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0013.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0013",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0014",
       "name": "Plastic Chain Red & white -8MM / 25M",
-      "category": "road_safety_outdoor",
+      "category": "road_safety",
       "subcategory": "Road Safety -Outdoor",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0014.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0014",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROH0001",
       "name": "Wheel Chock",
-      "category": "road_safety_outdoor",
+      "category": "road_safety",
       "subcategory": "Road Safety -Outdoor",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROH0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROH0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0021",
       "name": "Road Bumper",
-      "category": "road_safety_outdoor",
+      "category": "road_safety",
       "subcategory": "Road Safety -Outdoor",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0021.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0021",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROT0001",
       "name": "Floor Marking Tape 25M - Yellow",
-      "category": "road_safety_tape",
+      "category": "road_safety",
       "subcategory": "Road Safety - Tape",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROT0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROT0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROT0002",
       "name": "Floor Marking Tape 25M - Red & White",
-      "category": "road_safety_tape",
+      "category": "road_safety",
       "subcategory": "Road Safety - Tape",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROT0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROT0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROT0003",
       "name": "Floor Marking Tape 25M - Black & Yellow",
-      "category": "road_safety_tape",
+      "category": "road_safety",
       "subcategory": "Road Safety - Tape",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROT0003.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROT0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROT0004",
       "name": "Floor Marking Tape 25M Green",
-      "category": "road_safety_tape",
+      "category": "road_safety",
       "subcategory": "Road Safety - Tape",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROT0004.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROT0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROT0005",
       "name": "Floor Marking Tape 25M Blue",
-      "category": "road_safety_tape",
+      "category": "road_safety",
       "subcategory": "Road Safety - Tape",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROT0005.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROT0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROT0006",
       "name": "Floor Marking PVC Tape Yellow",
-      "category": "road_safety_tape",
+      "category": "road_safety",
       "subcategory": "Road Safety - Tape",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROT0006.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROT0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROT0008",
       "name": "Anti Slip Tape Black 2\" - 10 M",
-      "category": "road_safety_tape",
+      "category": "road_safety",
       "subcategory": "Road Safety - Tape",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROT0008.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROT0008",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROT0009",
       "name": "Anti Slip Tape Yellow 2\"",
-      "category": "road_safety_tape",
+      "category": "road_safety",
       "subcategory": "Road Safety - Tape",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROT0009.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROT0009",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROT0010",
       "name": "Anti Slip Tape Yellow & Black 2\" 10M",
-      "category": "road_safety_tape",
+      "category": "road_safety",
       "subcategory": "Road Safety - Tape",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROT0010.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROT0010",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROT0011",
       "name": "Anti Slip Tape Black 4\" - 10M",
-      "category": "road_safety_tape",
+      "category": "road_safety",
       "subcategory": "Road Safety - Tape",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROT0011.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROT0011",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROT0012",
       "name": "Anti Slip Tape Yellow 4\" - 10M",
-      "category": "road_safety_tape",
+      "category": "road_safety",
       "subcategory": "Road Safety - Tape",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROT0012.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROT0012",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROT0013",
       "name": "Anti Slip Tape Yellow & Black 4\" 10M",
-      "category": "road_safety_tape",
+      "category": "road_safety",
       "subcategory": "Road Safety - Tape",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROT0013.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROT0013",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROT0007",
       "name": "Caution Tape Yellow 10 M",
-      "category": "other",
+      "category": "road_safety",
       "subcategory": "Road Safety - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROT0007.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROT0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0017",
       "name": "Emergency Exit Board - Electricity",
-      "category": "other",
+      "category": "road_safety",
       "subcategory": "Road Safety - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0017.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0017",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0018",
       "name": "Barrier tape 1kg",
-      "category": "other",
+      "category": "road_safety",
       "subcategory": "Road Safety - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0018.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0018",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0019",
       "name": "LED Plastic Battle Light",
-      "category": "other",
+      "category": "road_safety",
       "subcategory": "Road Safety - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0019.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0019",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0015",
       "name": "Sign Board Wet Floor",
-      "category": "other",
+      "category": "road_safety",
       "subcategory": "Road Safety - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0015.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0015",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROH0002",
       "name": "Vehicle Inspection Mirror",
-      "category": "other",
+      "category": "road_safety",
       "subcategory": "Road Safety - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROH0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROH0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROH0004",
       "name": "Megaphone",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROH0004.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROH0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIS0001",
       "name": "Fire Blanket 1.8M X1.8M",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIS0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIS0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIS0002",
       "name": "Fire Blanket 1.2M X1.8M",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIS0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIS0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIS0003",
       "name": "Fire Blanket 1.2M X1.2M",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIS0003.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIS0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIS0004",
       "name": "Fireman Suit Complete Set (Helmet/Boot/Glove/Jacket & Trouser)",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIS0004.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIS0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIS0005",
       "name": "Fire Fighting Boot",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIS0005.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIS0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIS0006",
       "name": "Fire Fighting Glove",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIS0006.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIS0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIS0007",
       "name": "Fire Fighting Helmet",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIS0007.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIS0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIS0008",
       "name": "Fireman suit - Jacket & Trouser",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIS0008.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIS0008",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIS0009",
       "name": "Fire Extinguisher ball",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIS0009.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIS0009",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIS0010",
       "name": "Fire Axe",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIS0010.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIS0010",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIS0011",
       "name": "Break Glass for Key",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIS0011.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIS0011",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIS0012",
       "name": "Fire Siren - Manual Hooter",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIS0012.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIS0012",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIS0013",
       "name": "Fire Cabinet",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIS0013.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIS0013",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIS0014",
       "name": "Fire Hose",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIS0014.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIS0014",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIS0015",
       "name": "Smoke Detector",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIS0015.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIS0015",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIS0016",
       "name": "Fire Collar Point",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIS0016.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIS0016",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIE0001",
       "name": "CO2 Fire Extinguisher - 2KG",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIE0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIE0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIE0002",
       "name": "CO2 Fire Extinguisher - 3KG",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIE0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIE0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIE0003",
       "name": "Water - Fire Extinguisher - 6L",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIE0003.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIE0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIE0004",
       "name": "Water - Fire Extinguisher - 9L",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIE0004.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIE0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIE0005",
       "name": "Dry Powder - Fire Extinguisher",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIE0005.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIE0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIE0006",
       "name": "Dry Powder - Fire Extinguisher",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIE0006.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIE0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIE0008",
       "name": "Foam - Fire Extinguisher",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIE0008.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIE0008",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FIS0017",
       "name": "Fire Siren",
-      "category": "fire",
+      "category": "fire_safety",
       "subcategory": "Fire Safety",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FIS0017.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FIS0017",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "DPL0001",
       "name": "DPL LINEPRO Electrical Glove CLASS 00 (CE0598 / Max-500V)",
       "category": "hand",
       "subcategory": "Hand Protection - DPL",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/DPL0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "DPL0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "DPL0002",
       "name": "DPL LINEPRO Electrical Glove CLASS 0 (CE0598 / Max-1000V)",
       "category": "hand",
       "subcategory": "Hand Protection - DPL",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/DPL0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "DPL0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "DPL0003",
       "name": "DPL LINEPRO Electrical Glove CLASS 1 (CE0598 / Max-7500V)",
       "category": "hand",
       "subcategory": "Hand Protection - DPL",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/DPL0003.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "DPL0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "DPL0004",
       "name": "DPL LINEPRO Electrical Glove CLASS 2 (CE0598 / Max-17000V)",
       "category": "hand",
       "subcategory": "Hand Protection - DPL",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/DPL0004.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "DPL0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "DPL0005",
       "name": "DPL LINEPRO Electrical Glove CLASS 3 (CE0598 / Max-26500V)",
       "category": "hand",
       "subcategory": "Hand Protection - DPL",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/DPL0005.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "DPL0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "DPL0006",
       "name": "DPL LINEPRO Electrical Glove CLASS 4 (CE0598 / Max-36000V)",
       "category": "hand",
       "subcategory": "Hand Protection - DPL",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/DPL0006.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "DPL0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "DPL0007",
       "name": "DPL INTERFACE TOUGH – Unlined Chemical Nitrile Gloves -Elbow Length (EN 388 / EN ISO 374-5)",
       "category": "hand",
       "subcategory": "Hand Protection - DPL",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/DPL0007.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "DPL0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "DPL0008",
       "name": "DPL INTERFACE PLUS – Unlined Chemical Nitrile Gloves -Arm Length (EN 388 / EN ISO 374-5)",
       "category": "hand",
       "subcategory": "Hand Protection - DPL",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/DPL0008.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "DPL0008",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "DPL0009",
       "name": "DPL Cut Glove PALMPRO Cut 5",
       "category": "hand",
       "subcategory": "Hand Protection - DPL",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/DPL0009.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "DPL0009",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAR0001",
       "name": "Yellow Shoulder Length Rubber Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Rubber",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAR0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAR0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAR0002",
       "name": "Yellow Elbow Length Rubber Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Rubber",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAR0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAR0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAR0003",
       "name": "Yellow Arm Length Rubber Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Rubber",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAR0003.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAR0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAR0004",
       "name": "Red / Yellow Rose Shoulder Length Rubber Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Rubber",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAR0004.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAR0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAR0005",
       "name": "Red / Yellow Rose Elbow Length Rubber Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Rubber",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAR0005.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAR0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAR0006",
       "name": "Two Color Rubber Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Rubber",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAR0006.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAR0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAR0007",
       "name": "Pink Rubber Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Rubber",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAR0007.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAR0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAR0008",
       "name": "House Hold Rubber Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Rubber",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAR0008.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAR0008",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAL0001",
       "name": "Leather - Jason Glove (Welding / Heat)",
       "category": "hand",
       "subcategory": "Hand Protection - Leather",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAL0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAL0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAL0002",
       "name": "Leather - Red Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Leather",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAL0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAL0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAL0003",
       "name": "FRONTIER Leather Arm Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Leather",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAL0003.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAL0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAL0005",
       "name": "Leather - Shoulder Length Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Leather",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAL0005.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAL0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAO0005",
       "name": "Leather Arm Sleeve",
       "category": "hand",
       "subcategory": "Hand Protection - Leather",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAO0005.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAO0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAD0001",
       "name": "LALAN MOS P/Free Disposable Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Disposable",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAD0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAD0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAD0002",
       "name": "LALAN MOS Powdered Disposable Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Disposable",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAD0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAD0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAD0003",
       "name": "LALAN TOUCH P/Free Disposable Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Disposable",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAD0003.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAD0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAD0004",
       "name": "LALAN TOUCH Industrial P/Free Disposable Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Disposable",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAD0004.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAD0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAD0005",
       "name": "LALAN TOUCH Nitrile P/Free Disposable Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Disposable",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAD0005.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAD0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAD0006",
       "name": "NBR Nitrile P/Free Disposable Glove (Black / Blue)",
       "category": "hand",
       "subcategory": "Hand Protection - Disposable",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAD0006.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAD0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAD0007",
       "name": "Letex P/Free Disposable Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Disposable",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAD0007.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAD0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAD0008",
       "name": "LAM Nitrile Disposable Glove (S)",
       "category": "hand",
       "subcategory": "Hand Protection - Disposable",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAD0008.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAD0008",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAD0009",
       "name": "LAM Nitrile Disposable Glove (M)",
       "category": "hand",
       "subcategory": "Hand Protection - Disposable",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAD0009.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAD0009",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAD0010",
       "name": "LAM Nitrile Disposable Glove (L)",
       "category": "hand",
       "subcategory": "Hand Protection - Disposable",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAD0010.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAD0010",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAC0001",
       "name": "JUBA - Unlined Chemical Nitrile Gloves -Arm Length",
       "category": "hand",
       "subcategory": "Hand Protection - Chemical",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAC0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAC0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAC0002",
       "name": "Unlined Chemical Nitrile Gloves -Elbow Length",
       "category": "hand",
       "subcategory": "Hand Protection - Chemical",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAC0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAC0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAC0003",
       "name": "TECTION - Unlined Chemical Nitrile Gloves -Arm Length",
       "category": "hand",
       "subcategory": "Hand Protection - Chemical",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAC0003.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAC0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAC0004",
       "name": "Neoprene Black Chemical Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Chemical",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAC0004.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAC0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAC0005",
       "name": "FROG WEAR - Shoulder Length Chemical PVC Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Chemical",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAC0005.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAC0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAA0008",
       "name": "Oil Resistant Rubber Coated Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Chemical",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAA0008.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAA0008",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAT0001",
       "name": "Nylone Mixed Cotton Gloves - White",
       "category": "hand",
       "subcategory": "Hand Protection - Cotton",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAT0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAT0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAT0002",
       "name": "Nylone Mixed Cotton Gloves - Black",
       "category": "hand",
       "subcategory": "Hand Protection - Cotton",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAT0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAT0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAT0003",
       "name": "Cotton Glove (Heavy Duty)",
       "category": "hand",
       "subcategory": "Hand Protection - Cotton",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAT0003.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAT0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAT0004",
       "name": "SS - Cotton Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Cotton",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAT0004.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAT0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAT0005",
       "name": "Cotton Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Cotton",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAT0005.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAT0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAT0006",
       "name": "SS - Single Side Dot Cotton Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Coated",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAT0006.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAT0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAT0007",
       "name": "Single Side Dot Cotton Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Coated",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAT0007.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAT0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAT0008",
       "name": "SS - Double Side Dot Cotton Gloves",
       "category": "hand",
       "subcategory": "Hand Protection - Coated",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAT0008.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAT0008",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAT0009",
       "name": "Double Side Dot Cotton Gloves",
       "category": "hand",
       "subcategory": "Hand Protection - Coated",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAT0009.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAT0009",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAA0001",
       "name": "UVEX Cut Resistant Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Coated",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAA0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAA0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAA0002",
       "name": "Cut Resistant Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Coated",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAA0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAA0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAA0003",
       "name": "Rubber Coated Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Coated",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAA0003.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAA0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAA0004",
       "name": "DYE & DYE Rubber Coated Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Coated",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAA0004.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAA0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAA0005",
       "name": "300# Rubber Coated Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Coated",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAA0005.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAA0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAA0006",
       "name": "400# Rubber Coated Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Coated",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAA0006.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAA0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAA0007",
       "name": "LUWA Rubber Coated Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Coated",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAA0007.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAA0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAA0009",
       "name": "Cuff Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Coated",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAA0009.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAA0009",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAA0010",
       "name": "Rider Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Coated",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAA0010.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAA0010",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAO0001",
       "name": "Polythene Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAO0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAO0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAO0002",
       "name": "Mesh Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAO0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAO0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAO0003",
       "name": "Elbow Guard",
       "category": "hand",
       "subcategory": "Hand Protection - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAO0003.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAO0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAO0004",
       "name": "Cotton Arm Sleeve",
       "category": "hand",
       "subcategory": "Hand Protection - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAO0004.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAO0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAO0006",
       "name": "KEVLAR Arm Sleeve 16.5\"x15.5\"",
       "category": "hand",
       "subcategory": "Hand Protection - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAO0006.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAO0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAL0006",
       "name": "BEST TOP Heat Resistant Glove - 300 cc",
       "category": "hand",
       "subcategory": "Hand Protection - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAL0006.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAL0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAL0007",
       "name": "Cool Room Glove",
       "category": "hand",
       "subcategory": "Hand Protection - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAL0007.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAL0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "Haa0002",
       "name": "Cut Resistant Gloves Leval 5",
       "category": "hand",
       "subcategory": "Hand Protection - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/Haa0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "Haa0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "HAO000",
       "name": "LIQUID HAND WASH 5L",
       "category": "hand",
       "subcategory": "Hand Protection - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/HAO000.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "HAO000",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FAP0011",
       "name": "Lifting Belt - 5MT - 5M",
       "category": "fall",
       "subcategory": "Fall Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FAP0011.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FAP0011",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FAP0012",
       "name": "Lifting Belt - 5MT - 10M",
       "category": "fall",
       "subcategory": "Fall Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FAP0012.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FAP0012",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FAP0013",
       "name": "Lifting Belt - 2.5MT - 3M",
       "category": "fall",
       "subcategory": "Fall Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FAP0013.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FAP0013",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "FAP0014",
       "name": "D Shackle - 5MT",
       "category": "fall",
       "subcategory": "Fall Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FAP0014.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FAP0014",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOB0014",
       "name": "King George with steel white boot",
       "category": "foot",
       "subcategory": "Foot Protection - Boot",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOB0014.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOB0014",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOB0001",
       "name": "KING GEORGE - Without Steel-Black Boot (39 - 44)",
       "category": "foot",
       "subcategory": "Foot Protection - Boot",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOB0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOB0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOB0002",
       "name": "KING GEORGE - With Steel-Black Boot (39 - 44)",
       "category": "foot",
       "subcategory": "Foot Protection - Boot",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOB0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOB0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOB0003",
       "name": "KING GEORGE - With Steel-Yellow Boot (39 - 44)",
       "category": "foot",
       "subcategory": "Foot Protection - Boot",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOB0003.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOB0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOB0004",
       "name": "KING GEORGE - Without Steel-Yellow Boot (39 - 44)",
       "category": "foot",
       "subcategory": "Foot Protection - Boot",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOB0004.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOB0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOB0005",
       "name": "KING GEORGE - Without Steel-White Boot (39 - 44)",
       "category": "foot",
       "subcategory": "Foot Protection - Boot",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOB0005.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOB0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOB0006",
       "name": "OLEEMA - Without Steel-Black Boot (38 - 44)",
       "category": "foot",
       "subcategory": "Foot Protection - Boot",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOB0006.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOB0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOB0007",
       "name": "OLEEMA - With Steel-Black Boot (38 - 44)",
       "category": "foot",
       "subcategory": "Foot Protection - Boot",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOB0007.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOB0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOB0008",
       "name": "OLEEMA - With Steel-Ankle Boot- Yellow (38 - 44)",
       "category": "foot",
       "subcategory": "Foot Protection - Boot",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOB0008.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOB0008",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOB0009",
       "name": "OLEEMA - With Steel-Black Boot - 45",
       "category": "foot",
       "subcategory": "Foot Protection - Boot",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOB0009.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOB0009",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOB0010",
       "name": "OLEEMA - With Steel- Yellow Boot - 45",
       "category": "foot",
       "subcategory": "Foot Protection - Boot",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOB0010.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOB0010",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOB0011",
       "name": "3 - STAR - Without Steel-Yellow boot (39 - 45)",
       "category": "foot",
       "subcategory": "Foot Protection - Boot",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOB0011.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOB0011",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOB0012",
       "name": "3 - STAR - With Steel-Yellow boot (39 - 45)",
       "category": "foot",
       "subcategory": "Foot Protection - Boot",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOB0012.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOB0012",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0001",
       "name": "FIGHTER Safety shoe - High Ankle - 06 Months Warranty",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0002",
       "name": "FIGHTER Safety Shoe-Low Cut",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0003",
       "name": "GLAMMER Safety Shoe-Low Cut",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0003.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0004",
       "name": "BRAVO Safety Shoe-Low Cut",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0004.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0005",
       "name": "TUSKER Safety Shoe-High Ankle",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0005.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0006",
       "name": "BLACK HAMMER Safety shoe - High Ankle- 06 Months Warranty",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0006.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0007",
       "name": "BLACK HAMMER Safety shoe - Low Cut",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0007.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0008",
       "name": "KING Safety shoe - High Ankle",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0008.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0008",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0009",
       "name": "KING Safety shoe - Low Cut",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0009.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0009",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0010",
       "name": "RU - Safety shoe - High Ankle",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0010.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0010",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0011",
       "name": "RU - Safety shoe - Low Cut",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0011.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0011",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0013",
       "name": "ZAIN Safety Shoe - Low Cut",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0013.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0013",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0014",
       "name": "D Canvas Shoe with Lace - Black",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0014.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0014",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0015",
       "name": "D Canvas Shoe with Lace - White",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0015.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0015",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0016",
       "name": "D Canvas Shoe Without Lace - Black",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0016.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0016",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0017",
       "name": "D Canvas Shoe Without Lace - White",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0017.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0017",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0018",
       "name": "Canvas Shoe with Lace - Black",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0018.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0018",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0019",
       "name": "Canvas Shoe without Lace - Black",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0019.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0019",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0020",
       "name": "Lab Shoe full Cover - White",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0020.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0020",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0021",
       "name": "D Half Shoe - Care Plus Unisex Slip",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0021.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0021",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0022",
       "name": "D Half Shoe - Freedom Carewear (Black / White)",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0022.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0022",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0001-1",
       "name": "FIGHTER Safety shoe - High Ankle - 06 Months Warranty",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0001-1.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0001-1",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOS0012",
       "name": "ZAIN High Ankle Safety Shoe",
       "category": "foot",
       "subcategory": "Foot Protection - Shoe",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOS0012.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOS0012",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOO0003",
       "name": "Cotton socks – black",
       "category": "foot",
       "subcategory": "Foot Protection - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOO0003.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOO0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOO0001",
       "name": "Disposable Shoe Cover-100 Pcs pack",
       "category": "foot",
       "subcategory": "Foot Protection - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOO0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOO0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOO0002",
       "name": "Ankle Guard",
       "category": "foot",
       "subcategory": "Foot Protection - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOO0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOO0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "FOB0013",
       "name": "Well boot",
       "category": "foot",
       "subcategory": "Foot Protection - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/FOB0013.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "FOB0013",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0016",
       "name": "Sign Board Empty",
       "category": "foot",
       "subcategory": "Foot Protection - Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0016.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0016",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "MAR0001",
       "name": "Lifebuoy Ring",
-      "category": "marine",
+      "category": "accessories",
       "subcategory": "Marine",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/MAR0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "MAR0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "MAR0002",
       "name": "YAMAHA Life Jacket",
-      "category": "marine",
+      "category": "accessories",
       "subcategory": "Marine",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/MAR0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "MAR0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "0000A1",
       "name": "Polypropylene PP Ropes - 12mm",
-      "category": "marine",
+      "category": "accessories",
       "subcategory": "Marine",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/0000A1.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "0000A1",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "00",
       "name": "Rescue Torpedo (Life saving Equipment)",
-      "category": "marine",
+      "category": "accessories",
       "subcategory": "Marine",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/00.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "00",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "MED0001",
       "name": "First Aid Box",
       "category": "medical",
       "subcategory": "Medical",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/MED0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "MED0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "MED0002",
       "name": "Thermometer",
       "category": "medical",
       "subcategory": "Medical",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/MED0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "MED0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "MED0003",
       "name": "Portable Stretcher",
       "category": "medical",
       "subcategory": "Medical",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/MED0003.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "MED0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "MED0004",
       "name": "Spinal Board",
       "category": "medical",
       "subcategory": "Medical",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/MED0004.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "MED0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "0000",
@@ -3730,1229 +3994,1324 @@
       "specs": {
         "Item Code": "0000",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "OTH0019",
       "name": "Queue Manager",
-      "category": "other",
+      "category": "accessories",
       "subcategory": "Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/OTH0019.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "OTH0019",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "OTH0020",
       "name": "Electrical Rubber Mats (1M x 1M)",
-      "category": "other",
+      "category": "accessories",
       "subcategory": "Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/OTH0020.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "OTH0020",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "OTH0025",
       "name": "Container Seal",
-      "category": "other",
+      "category": "accessories",
       "subcategory": "Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/OTH0025.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "OTH0025",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "OTH0001",
       "name": "Plastic Bin - 45L",
-      "category": "other",
+      "category": "accessories",
       "subcategory": "Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/OTH0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "OTH0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "OTH0002",
       "name": "Plastic Bin - 70L",
-      "category": "other",
+      "category": "accessories",
       "subcategory": "Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/OTH0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "OTH0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "OTH0003",
       "name": "Plastic Bin - 120L",
-      "category": "other",
+      "category": "accessories",
       "subcategory": "Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/OTH0003.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "OTH0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROH0003",
       "name": "Head Torch",
-      "category": "other",
+      "category": "accessories",
       "subcategory": "Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROH0003.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROH0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "OTH0005",
       "name": "Weight lifting training belt - Artificial Leather",
-      "category": "other",
+      "category": "accessories",
       "subcategory": "Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/OTH0005.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "OTH0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "OTH0006",
       "name": "Weight lifting training belt - Genuine Leather",
-      "category": "other",
+      "category": "accessories",
       "subcategory": "Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/OTH0006.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "OTH0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "OTH0007",
       "name": "Chemical Pallet",
-      "category": "other",
+      "category": "accessories",
       "subcategory": "Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/OTH0007.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "OTH0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "OTH0008",
       "name": "6800 Full Face",
-      "category": "other",
+      "category": "accessories",
       "subcategory": "Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/OTH0008.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "OTH0008",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "EYP0006",
       "name": "Beard Guard",
-      "category": "other",
+      "category": "accessories",
       "subcategory": "Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/EYP0006.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "EYP0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "ROO0020",
       "name": "Windsock",
-      "category": "other",
+      "category": "accessories",
       "subcategory": "Other",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/ROO0020.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "ROO0020",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "Other"
     },
     {
       "id": "3M0026",
       "name": "3M 391-1004 EARSOFT YELLOW NEONS EAR PLUG BOTTLE 500 PAIRS",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0026.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0026",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0001",
       "name": "3M 6800 FULL FACE DOUBLE CARTRIDGE RESPIRATOR ( FACE PC )",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0001.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0001",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0002",
       "name": "3M 6200 HALF FACE DOUBLE CARTRIDGE RESPIRATOR ( FACE PC )",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0002.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0002",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0003",
       "name": "3M 6001 ORGANIC VAOUR CARTRIDGE",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0003.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0003",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0004",
       "name": "3M 6003 ORGANIC VAPOUR ACID GAS CARTRIDGE",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0004.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0004",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0005",
       "name": "3M 6004 AMMONIA METHYLAMINE CARTRIDGE",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0005.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0005",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0006",
       "name": "3M 6006 MULTI GAS VAPOUR CARTRIDGE 60/CS (S)",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0006.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0006",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0007",
       "name": "3M 5N11 N95 FILTER",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0007.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0007",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0008",
       "name": "3M 501 FILTER RETAINER",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0008.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0008",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0009",
       "name": "3M 3200 HALF FACE SINGLE CARTRIDGE RESPIRATOR ( FACE PC )",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0009.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0009",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0010",
       "name": "3M 3700 FILTER HOLDER",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0010.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0010",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0011",
       "name": "3M 3744 FILTER",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0011.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0011",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0012",
       "name": "3M 3311K-55 ORGANIC VAPOR CARTRIDGE",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0012.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0012",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0013",
       "name": "3M 2091 P100 FILTER",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0013.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0013",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0014",
       "name": "3M 2071 P95 FILTER",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0014.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0014",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0015",
       "name": "3M 7093 P100 FILTER",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0015.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0015",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0016",
       "name": "3M 9105 PARTICULATE RESPIRATOR N95",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0016.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0016",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0017",
       "name": "3M 7502 HALF FACE DOUBLE CARTRIDGE RESPIRATOR SILICONE",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0017.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0017",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0018",
       "name": "3M 8247 NUISANCE LEVEL ACTIVATED CARBON RESPIRATOR R95",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0018.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0018",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0019",
       "name": "3M 9000 ING Anti Pollution Mask",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0019.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0019",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0020",
       "name": "3M 1700 Filter Holder",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0020.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0020",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0021",
       "name": "3M 9004GV Mask",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0021.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0021",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0022",
       "name": "3M 70-0000-1898 FT-FIT TEST APPARATUS",
       "category": "respiratory",
       "subcategory": "3M - Respiratory Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0022.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0022",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0023",
       "name": "3M 1110 Corded Ear Plug",
       "category": "hearing",
       "subcategory": "3M - Hearing Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0023.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0023",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0024",
       "name": "3M 340-44004 ULTRAFIT CORDED EAR PLUG REUSABLE",
       "category": "hearing",
       "subcategory": "3M - Hearing Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0024.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0024",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0025",
       "name": "3M 340-44002 ULTRAFIT CORDED EAR PLUG WITH CASE REUSABLE",
       "category": "hearing",
       "subcategory": "3M - Hearing Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0025.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0025",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0027",
       "name": "3M PELTOR OPTIME 105 H10A EAR MUFF 30 dB",
       "category": "hearing",
       "subcategory": "3M - Hearing Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0027.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0027",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0028",
       "name": "3M PELTOR OPTIME 95 H6A/V EAR MUFF 21 dB",
       "category": "hearing",
       "subcategory": "3M - Hearing Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0028.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0028",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0029",
       "name": "3M EAR ONE TOUCH PRO EAR PLUG DISPENSER 391-0000",
       "category": "hearing",
       "subcategory": "3M - Hearing Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0029.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0029",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0030",
       "name": "3M PELTOR OPTIME 105 H10P3E EAR MUFF HARD HAT ATTACHED",
       "category": "hearing",
       "subcategory": "3M - Hearing Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0030.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0030",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0031",
       "name": "3M PELTOR HY10 HYGIENE KIT",
       "category": "hearing",
       "subcategory": "3M - Hearing Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0031.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0031",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0032",
       "name": "3M 310-1001 CLASSIC EAR PLUG PILLOW PACK",
       "category": "hearing",
       "subcategory": "3M - Hearing Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0032.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0032",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0033",
       "name": "3M 1621 IN PLUS CHEMICAL RESISTANT GOGGLE",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "3M - Eye & Face Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0033.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0033",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0034",
       "name": "3M H8A RACHET HEADGEAR WITH GREEN POLYCARBONATE FACESHIELD",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "3M - Eye & Face Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0034.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0034",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0035",
       "name": "3M H8A RACHET HEADGEAR WITH CLEAR POLYCARBONATE FACESHIELD",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "3M - Eye & Face Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0035.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0035",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0036",
       "name": "SF 401 SECURE FIT CLEAR EYE WEAR AF/AS",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "3M - Eye & Face Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0036.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0036",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0037",
       "name": "SF 201 SECURE FIT CLEAR EYE WEAR AF/AS",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "3M - Eye & Face Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0037.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0037",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0038",
       "name": "SF 202 SECURE FIT DARK EYE WEAR AF/AS",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "3M - Eye & Face Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0038.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0038",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0039",
       "name": "3M GG501 GOGGLE GEAR",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "3M - Eye & Face Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0039.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0039",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0040",
       "name": "3M SOLUS SAFETY GLASSES AF/AS GRN/BLK",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "3M - Eye & Face Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0040.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0040",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0041",
       "name": "3M SOLUS SAFETY GLASSES AF/AS BLU/BLK",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "3M - Eye & Face Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0041.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0041",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0042",
       "name": "3M SOLUS 1000 SERIES GRAY LENS SPECTACLE",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "3M - Eye & Face Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0042.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0042",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0043",
       "name": "3M 2895S SHADE 5 WELDING GOGGLE",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "3M - Eye & Face Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0043.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0043",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0066",
       "name": "3M H8A IR GREEN POLYCARBONATE FACESHIELD",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "3M - Eye & Face Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0066.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0066",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0068",
       "name": "GG 501 GOGGLE GEAR PRESCRIPTION",
-      "category": "head_eye",
+      "category": "eye_face",
       "subcategory": "3M - Eye & Face Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0068.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0068",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0044",
       "name": "3M SPEEDGLAS WELDING HELMET G5-03 E",
-      "category": "welding_protection",
+      "category": "welding",
       "subcategory": "3M - Welding Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0044.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0044",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0045",
       "name": "3M H701SFR WHITE HARD HAT WITH RACHET ADJUSTMENT",
-      "category": "head_eye",
+      "category": "head",
       "subcategory": "3M - Head Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0045.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0045",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0046",
       "name": "3M H702SFR YELLOW HARD HAT WITH RACHET ADJUSTMENT",
-      "category": "head_eye",
+      "category": "head",
       "subcategory": "3M - Head Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0046.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0046",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0047",
       "name": "3M H703SFR BLUE HARD HAT WITH RACHET ADJUSTMENT",
-      "category": "head_eye",
+      "category": "head",
       "subcategory": "3M - Head Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0047.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0047",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0048",
       "name": "3M H401P WHITE HARD HAT WITH PINLOCK ADJUSTMENT",
-      "category": "head_eye",
+      "category": "head",
       "subcategory": "3M - Head Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0048.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0048",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0049",
       "name": "3M 4510 DISPOSABLE DUST COVERALL WHITE SIZE L",
       "category": "body",
       "subcategory": "3M - Body Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0049.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0049",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0050",
       "name": "3M 4565 CHEMICAL RESISTANT DISPOSABLE COVERALL SIZE M",
       "category": "body",
       "subcategory": "3M - Body Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0050.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0050",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0051",
       "name": "3M 4565 CHEMICAL RESISTANT DISPOSABLE COVERALL SIZE L",
       "category": "body",
       "subcategory": "3M - Body Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0051.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0051",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0052",
       "name": "3M 50425 REUSABLE COVERALL SIZE M",
       "category": "body",
       "subcategory": "3M - Body Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0052.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0052",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0053",
       "name": "3M 50425 REUSABLE COVERALL SIZE L",
       "category": "body",
       "subcategory": "3M - Body Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0053.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0053",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0058",
       "name": "3M PROTECTA 1390010 UNILA FULL BODY HARNESS",
       "category": "body",
       "subcategory": "3M - Body Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0058.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0058",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0054",
       "name": "3M P-208 CHEMICAL SORBENT MINI-BOOMS",
-      "category": "emergency",
+      "category": "spill",
       "subcategory": "3M - Spill Response",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0054.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0054",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0055",
       "name": "3M C-PD 914DD CHEMICAL SORBENT PADS 25 PADS/BOX",
-      "category": "emergency",
+      "category": "spill",
       "subcategory": "3M - Spill Response",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0055.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0055",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0056",
       "name": "3M PROTECTA 1390370 SHOCK ABSORB LANYARD SINGLE ROPE",
       "category": "fall",
       "subcategory": "3M - Fall Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0056.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0056",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0057",
       "name": "3M PROTECTA 1390235 FORKED SHOCK LANYARD DOUBLE ROPE",
       "category": "fall",
       "subcategory": "3M - Fall Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0057.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0057",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0059",
       "name": "3M PROTECTA 1390033 HARNESS WITH POSITIONING BELT",
       "category": "fall",
       "subcategory": "3M - Fall Protection",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0059.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0059",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0060",
       "name": "3M 6885 FACE SHIELD COVERS",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0060.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0060",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0061",
       "name": "3M 6894/37004 NOSE CUP ASSEMBLY",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0061.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0061",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0062",
       "name": "3M 6897 HEAD HARNESS ASSEMBLY",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0062.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0062",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0063",
       "name": "3M 6281 HEAD HARNESS ASSEMBLY",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0063.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0063",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0064",
       "name": "3M H-700-RS4 HARD HAT SUSPENSION",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0064.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0064",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0065",
       "name": "GG501 SGAF REPLACEMENT CLEAR LENS",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0065.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0065",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0067",
       "name": "3M H8A CLEAR POLYCARBONATE FACESHIELD",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0067.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0067",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0069",
       "name": "3M SCOTT PRO PACK SIGMA SCBA",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0069.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0069",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0070",
       "name": "3M OFFICE AND DESK CLEANER",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0070.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0070",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0071",
       "name": "SUPER 33+ VINYL ELECTRICAL TAPE BLACK",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0071.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0071",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0072",
       "name": "3M 9141 810 1/2 YDS SCOTCH MAGIC TAPE",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0072.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0072",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0073",
       "name": "3M 4510 DISPOSABLE DUST COVERALL WHITE SIZE M",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0073.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0073",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0074",
       "name": "3M V-100/37018 VORTEX COOLING ASSEMBLY",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0074.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0074",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0075",
       "name": "3M V-199/37069 ADAPTER",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0075.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0075",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0076",
       "name": "3M BT-20L/37310 AAD BREATHING TUBE",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0076.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0076",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0077",
       "name": "3M S-757/37301 PAINTERS HOOD ASSEMBLY",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0077.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0077",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0078",
       "name": "3M W-9435-25 COMPRESSED AIR HOSE",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0078.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0078",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0079",
       "name": "3M W-2811-10/07007 FILTER CARTRIDGE",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0079.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0079",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0080",
       "name": "3M W-2806 AIR FILTER REGULATOR PANEL",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0080.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0080",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     },
     {
       "id": "3M0073",
       "name": "150 TemflexTM General Use Vinyl Electrical Tape",
-      "category": "3m_accessories",
+      "category": "accessories",
       "subcategory": "3M - Accessories",
-      "image": "/images/placeholder.png",
+      "image": "/images/products/3M0073.jpeg",
       "description": "",
       "uom": "Each",
       "specs": {
         "Item Code": "3M0073",
         "Price": "Contact for Price"
-      }
+      },
+      "brand": "3M"
     }
   ]
 }

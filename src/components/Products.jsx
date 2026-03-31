@@ -6,25 +6,38 @@ import productsData from '../data/products.json';
 
 const ProductPage = () => {
     const [searchQuery, setSearchQuery] = useState('');
+    const [selectedBrand, setSelectedBrand] = useState('all'); // 'all', '3M', 'Other'
     const [selectedCategory, setSelectedCategory] = useState('all');
     const [selectedProduct, setSelectedProduct] = useState(null);
 
-    // Calculate product counts
+    // Calculate product counts based on BRAND selection
     const productCounts = useMemo(() => {
+        // Filter by brand first to get counts for current brand selection
+        const brandFiltered = selectedBrand === 'all' 
+            ? productsData.products 
+            : productsData.products.filter(p => p.brand === selectedBrand);
+
         const counts = {
-            all: productsData.products.length,
+            all: brandFiltered.length,
         };
+
         productsData.categories.forEach(category => {
-            counts[category.id] = productsData.products.filter(
+            counts[category.id] = brandFiltered.filter(
                 p => p.category === category.id
             ).length;
         });
-        return counts;
-    }, []);
 
-    // Filter products based on search and category
+        return counts;
+    }, [selectedBrand]);
+
+    // Filter products based on brand, search, and category
     const filteredProducts = useMemo(() => {
         let filtered = productsData.products;
+
+        // Filter by Brand
+        if (selectedBrand !== 'all') {
+            filtered = filtered.filter(product => product.brand === selectedBrand);
+        }
 
         // Filter by category
         if (selectedCategory !== 'all') {
@@ -36,24 +49,58 @@ const ProductPage = () => {
             const query = searchQuery.toLowerCase();
             filtered = filtered.filter(product =>
                 product.name.toLowerCase().includes(query) ||
-                product.subcategory.toLowerCase().includes(query) ||
+                (product.subcategory && product.subcategory.toLowerCase().includes(query)) ||
                 product.description?.toLowerCase().includes(query)
             );
         }
 
         return filtered;
-    }, [searchQuery, selectedCategory]);
+    }, [searchQuery, selectedCategory, selectedBrand]);
 
-    // Group products by subcategory
+    // Group products by main category for a cleaner, unified display
     const groupedProducts = useMemo(() => {
-        const groups = {};
-        filteredProducts.forEach(product => {
-            if (!groups[product.subcategory]) {
-                groups[product.subcategory] = [];
-            }
-            groups[product.subcategory].push(product);
+        const groups = [];
+        const categoryMap = {};
+        
+        // Initialize groups using the predefined order in productsData.categories
+        productsData.categories.forEach(cat => {
+            categoryMap[cat.id] = {
+                id: cat.id,
+                name: cat.name,
+                products: []
+            };
+            groups.push(categoryMap[cat.id]);
         });
-        return groups;
+
+        // Distribute filtered products into their categories
+        filteredProducts.forEach(product => {
+            if (categoryMap[product.category]) {
+                categoryMap[product.category].products.push(product);
+            } else {
+                // Fallback for any product with an unknown category
+                let other = categoryMap['other'];
+                if (!other) {
+                    other = { id: 'other', name: 'Other Accessories', products: [] };
+                    categoryMap['other'] = other;
+                    groups.push(other);
+                }
+                other.products.push(product);
+            }
+        });
+
+        // Filter out empty categories and sort the products within
+        return groups.filter(group => group.products.length > 0).map(group => {
+            // Sort: 3M products always first, then by name
+            const sortedProducts = [...group.products].sort((a, b) => {
+                if (a.brand === '3M' && b.brand !== '3M') return -1;
+                if (b.brand === '3M' && a.brand !== '3M') return 1;
+                return a.name.localeCompare(b.name);
+            });
+            return {
+                ...group,
+                products: sortedProducts
+            };
+        });
     }, [filteredProducts]);
 
     return (
@@ -80,6 +127,8 @@ const ProductPage = () => {
                     <ProductFilters
                         searchQuery={searchQuery}
                         setSearchQuery={setSearchQuery}
+                        selectedBrand={selectedBrand}
+                        setSelectedBrand={setSelectedBrand}
                         selectedCategory={selectedCategory}
                         setSelectedCategory={setSelectedCategory}
                         categories={productsData.categories}
@@ -121,26 +170,33 @@ const ProductPage = () => {
                         </button>
                     </div>
                 ) : (
-                    <div className="space-y-20">
-                        {Object.entries(groupedProducts).map(([subcategory, products], index) => (
-                            <div key={subcategory} className="animate-slideUp" style={{ animationDelay: `${(index % 5) * 100 + 300}ms` }}>
-                                {/* Subcategory Header */}
-                                <div className="flex items-center gap-5 mb-8">
+                    <div className="space-y-24">
+                        {groupedProducts.map((group, index) => (
+                            <div key={group.id} className="animate-slideUp" style={{ animationDelay: `${(index % 5) * 100 + 300}ms` }}>
+                                {/* Category Header */}
+                                <div className="flex items-center gap-5 mb-10">
                                     <div className="flex-shrink-0 w-1.5 h-12 bg-gradient-to-b from-primary-500 to-accent-gold rounded-full shadow-lg shadow-primary-500/20"></div>
                                     <div>
-                                        <h2 className="text-2xl md:text-3xl font-display font-extrabold text-industrial-900 tracking-tight">
-                                            {subcategory}
+                                        <h2 className="text-3xl md:text-4xl font-display font-extrabold text-industrial-900 tracking-tight">
+                                            {group.name}
                                         </h2>
-                                        <p className="text-industrial-500 text-sm mt-1 font-medium">
-                                            {products.length} {products.length === 1 ? 'Product Available' : 'Products Available'}
-                                        </p>
+                                        <div className="flex items-center gap-3 mt-2">
+                                            <span className="text-industrial-500 text-sm font-medium">
+                                                {group.products.length} {group.products.length === 1 ? 'Product Available' : 'Products Available'}
+                                            </span>
+                                            {group.products.some(p => p.brand === '3M') && (
+                                                <span className="px-2.5 py-1 bg-red-50 text-red-600 border border-red-100 text-[10px] font-black tracking-widest uppercase rounded-lg shadow-sm">
+                                                    Includes 3M
+                                                </span>
+                                            )}
+                                        </div>
                                     </div>
                                     <div className="flex-1 h-px bg-gradient-to-r from-industrial-200 to-transparent ml-4 hidden sm:block"></div>
                                 </div>
 
                                 {/* Products Grid */}
                                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 xl:gap-8 snap-y">
-                                    {products.map(product => (
+                                    {group.products.map(product => (
                                         <div key={product.id} className="snap-start">
                                             <ProductCard
                                                 product={product}
